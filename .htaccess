@@ -1,0 +1,26 @@
+# -FrontPage-
+RewriteEngine On
+RewriteRule bits_modified - [L]
+# Catch iPhone-users first, easiest to discover
+RewriteCond %{HTTP_USER_AGENT} .*Mobile.*Safari
+RewriteRule ^[\./](.*) - [E=SITEACCESS:iphone]
+RewriteCond %{HTTP_USER_AGENT} !(.*Opera\ Mini.*)
+RewriteRule ^[\./](.*) - [E=SITEACCESS:iphone]
+RewriteCond %{HTTP_USER_AGENT} !(.*SymbianOS.*)
+RewriteRule ^[\./](.*) - [E=SITEACCESS:iphone]
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+#AuthName sandbox.speedhorse.com
+#AuthUserFile /home/shsand/public_html/_vti_pvt/service.pwd
+#AuthGroupFile /home/shsand/public_html/_vti_pvt/service.grp
+
