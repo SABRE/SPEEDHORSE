@@ -390,11 +390,11 @@ MatchFile=edit/forum_topic.tpl
 Subdir=templates
 Match[class_identifier]=forum_topic
 
-[edit_ezsubtreesubscription_forum_topic]
-Source=content/datatype/edit/ezsubtreesubscription.tpl
-MatchFile=datatype/edit/ezsubtreesubscription/forum_topic.tpl
-Subdir=templates
-Match[class_identifier]=forum_topic
+#[edit_ezsubtreesubscription_forum_topic]
+#Source=content/datatype/edit/ezsubtreesubscription.tpl
+#MatchFile=datatype/edit/ezsubtreesubscription/forum_topic.tpl
+#Subdir=templates
+#Match[class_identifier]=forum_topic
 
 [edit_forum_reply]
 Source=content/edit.tpl
