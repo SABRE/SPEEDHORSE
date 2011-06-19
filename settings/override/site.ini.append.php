@@ -20,6 +20,9 @@ ActiveExtensions[]=dbi_randomcode
 ActiveExtensions[]=ezauthorize
 ActiveExtensions[]=ezuser
 ActiveExtensions[]=multimedia
+ActiveExtensions[]=racingnews
+ActiveExtensions[]=all2eqrcode
+ActiveExtensions[]=spblogs
 
 [Session]
 SessionNameHandler=custom
