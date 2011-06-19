@@ -12,6 +12,7 @@ $tpl = templateInit();
 $viewarr= array();
 
 $startbody='';
+$startbody0='';
 $myoutput='';			
 $startbody1='';
 $myoutput1='';			
