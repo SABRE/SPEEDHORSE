@@ -1,0 +1,74 @@
+all2eqrcode - Extension created by all2e GmbH
+
+WHAT'S INSIDE
+=============================================
+Following things are provided by this extension
+- Template operator called "qrcode"
+- Custom Tag for Online Editor
+- Module /qrcode/encode for demo
+
+
+INSTALL
+=============================================
+- To install this extension. Copy the all2eqrcode folder to your
+  extension folder.
+- Activate the extension in your site.ini.append.php for a siteaccess
+  or override.
+  
+  Override:
+  [ExtensionSettings]
+  ActiveExtensions[]=all2eqrcode
+  
+  Siteaccess:
+  [ExtensionSettings]
+  ActiveAccessExtensions[]=all2eqrcode
+  
+  enjoy the features
+
+
+HOW TO USE
+=============================================
+Custom tag:
+- select the custom tag menu in your editor
+- select the tag "qrcode" from select-field
+- enter your text in the text-field
+- optional attributes:
+  - type: can be: url, sms, tel, email, text(default)
+  - width: int-value for the width 250(default)
+  - height: int-value for the height 250(default)
+- save and publish the object
+
+
+Template opearator: qrcode( input [, type [, width [, height] ] ] )
+- Parameters:
+  - input: your text that should be transformed
+  - type: can be: url, sms, tel, email, text(default)
+  - width: int-value for the width 250(default)
+  - height: int-value for the height 250(default)
+- Returns:
+  - an encoded string, which can be used as src in an <img> tag
+- Examples:
+  - {qrcode('www.all2e.com')}
+  - {qrcode('www.all2e.com','url')}
+  - {qrcode('www.all2e.com','url',250)}
+  - {qrcode('www.all2e.com','url',250,250)}
+  - <img src="{qrcode('http://www.all2e.com')}" alt="all2e GmbH" />
+
+
+Module view:
+- call /qrcode/encode/(type)/(text)/(width)/(height)
+- Example: /qrcode/encode/text/qr-code/250/250
+
+
+
+
+
+
+
+
+
+
+
+
+
+

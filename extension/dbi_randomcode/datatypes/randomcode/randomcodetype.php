@@ -2,15 +2,14 @@
 
 define( "EZ_DATATYPE_RANDOMCODE_DIGITS_FIELD", "data_int2" );
 define( "EZ_DATATYPE_RANDOMCODE_DIGITS_VARIABLE", "_randomcode_digits_integer_value_" );
+//define ("STR_PAD_LEFT","Aztgk");
+
 
 include_once( "kernel/classes/ezdatatype.php" );
 include_once( "lib/ezutils/classes/ezintegervalidator.php" );
 
 class RandomCodeType extends eZDataType
 {
-   
-   var $rand_id;
-   var $rand_value;
     function RandomCodeType()
     {
         $this->eZDataType( 'randomcode',
@@ -84,11 +83,11 @@ class RandomCodeType extends eZDataType
                               array( "table" => "ezcontentclass_attribute" ) ) );
 
             do {
-               // $possibleCode = str_pad( rand( 1, $max ), $digits, '0', STR_PAD_LEFT );
+                $possibleCode = substr(str_pad( md5(rand( 1, $max )), $digits, '0', STR_PAD_LEFT ),0,9);
 				
-				$possibleCode = substr(str_pad( md5(rand( 1, $max )), $digits, '0', STR_PAD_LEFT ),0,9);
 				
-				//$possibleCode = $this->get_rand_id($max);
+				
+				//$possibleCode = get_rand_id($max);
 
                 eZDebug::writeDebug( $possibleCode, 'RandomCodeType possible code' );
 
@@ -145,8 +144,6 @@ class RandomCodeType extends eZDataType
 	
 	
 		
-	
-	
 	
 	
 }
