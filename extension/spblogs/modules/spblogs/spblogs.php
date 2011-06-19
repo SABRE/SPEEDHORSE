@@ -45,7 +45,7 @@ $star33="";
 
 /////////////////////////////////////////////////////////Blog Directory Name///////////////////////////////////////////////////////////////////////////
 
-$data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='134' and ezcontentobject.status='1' order by published desc limit 0,1");
+$data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='140' and ezcontentobject.status='1' order by published desc limit 0,1");
 		//$startbody1.='<ul class="speedhorse_list">';
 		foreach($data as $row)
 		{
