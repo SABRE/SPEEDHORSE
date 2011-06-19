@@ -13,7 +13,8 @@ $viewarr= array();
 
 $startbody='';
 $startbody0='';
-$myoutput='';			
+$myoutput='';
+$myoutput0='';			
 $startbody1='';
 $myoutput1='';			
 $startbody2='';
