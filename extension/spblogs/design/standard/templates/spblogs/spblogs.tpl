@@ -52,10 +52,7 @@
 			<h2 class="section_title" style="float:left;">Tags</h2>
             
             <div id="blog_tags" style="float:left;">
-			{foreach ezkeywordlist( 'blog_post', $used_node.node_id ) as $keyword}
-                                <a href={concat( $used_node.url_alias, "/(tag)/", $keyword.keyword|rawurlencode )|ezurl} title="{$keyword.keyword}" style="font-size:10px;">{$keyword.keyword} ({fetch( 'content', 'keyword_count', hash( 'alphabet', $keyword.keyword, 'classid', 'blog_post','parent_node_id', $used_node.node_id ) )})</a>
-                            {/foreach}
-            	
+			
             </div><!--end div#blog_tags-->
 			<br />
 			<br />
