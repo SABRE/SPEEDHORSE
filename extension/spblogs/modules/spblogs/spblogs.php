@@ -826,4 +826,6 @@ $tpl->setVariable( 'myoutput9', $myoutput9);
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:spblogs/spblogs.tpl' );
 
+
+
 ?>
