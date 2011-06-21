@@ -4,7 +4,7 @@
 		<div id="content"><!--start div#content-->
         	
             <div id="featured_post_wrap" style="margin-bottom:20px;">
-                {$myoutput0}<!--end div.post_content-->
+               {$myoutput0}<!--end div.post_content-->
             </div><!--end div#featured_post_wrap-->
             
 			<div id="blog_directory" style="border-bottom:none;margin-bottom:0;">
@@ -47,20 +47,39 @@
 	</div>
 		<div style="width:300px;float:right">
 		<div id="sidebar">
-			<div id="big_ad_2" style="margin-top:0;float:left;">{$myoutput6}</div>
+			<div id="big_ad_2" style="margin-top:0;float:left;">{$myoutput5}</div>
 
 			<h2 class="section_title" style="float:left;">Tags</h2>
             
             <div id="blog_tags" style="float:left;">
-			
+            	
+				<a href="#" style="font-size:10px;">horses</a>
+                <a href="#" style="font-size:14px;">stallion</a> 
+                <a href="#" style="font-size:18px;">racing</a> 
+                <a href="#" style="font-size:12px;">results</a>
+                <a href="#" style="font-size:14px;">winner</a> 
+                <a href="#" style="font-size:10px;">horse</a>
+                <a href="#" style="font-size:12px;">betting</a> 
+                <a href="#" style="font-size:16px;">mustang</a>
+                <a href="#" style="font-size:14px;">stallion</a>
+                <a href="#" style="font-size:18px;">racing</a>
+                <a href="#" style="font-size:12px;">results</a>
+                <a href="#" style="font-size:10px;">horse</a>
+                <a href="#" style="font-size:12px;">betting</a>
+                <a href="#" style="font-size:16px;">mustang</a>
+                <a href="#" style="font-size:10px;">horses</a>
+                <a href="#" style="font-size:14px;">stallion</a> 
+                <a href="#" style="font-size:16px;">results</a>
+                <a href="#" style="font-size:14px;">winner</a>
+                <a href="#" style="font-size:10px;">horse</a>
+                <a href="#" style="font-size:14px;">betting</a>
             </div><!--end div#blog_tags-->
-			<br />
-			<br />
-			<a id="sidebar_site_link_1" href="#"></a>
-			<a id="sidebar_site_link_2" href="#"></a>
+            
+			<a id="sidebar_site_link_1" href="#" style="float:left;"></a>
+			<a id="sidebar_site_link_2" href="#" style="float:left;"></a>
 			<h2 class="section_title" style="float:left;">special focus title</h2>
 			<ul class="speedhorse_list" style="float:left;">
-				{$myoutput7}
+				{$myoutput6}
 			</ul>
 		</div><!-- #sidebar -->
 	</div>

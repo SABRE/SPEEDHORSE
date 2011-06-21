@@ -11,12 +11,10 @@ $db = eZDB::instance();
 $tpl = templateInit();
 $viewarr= array();
 
-$startbody='';
 $startbody0='';
-$myoutput='';
 $myoutput0='';			
-$startbody1='';
-$myoutput1='';			
+$startbody='';
+$myoutput='';			
 $startbody2='';
 $myoutput2='';			
 $startbody3='';
@@ -29,12 +27,6 @@ $startbody6='';
 $myoutput6='';			
 $startbody7='';
 $myoutput7='';			
-$startbody8='';
-$myoutput8='';			
-$startbody9='';
-$myoutput9='';			
-$startbody10='';
-$myoutput10='';			
 ////for stars
 $star1="";
 $star11="";
@@ -43,7 +35,7 @@ $star22="";
 $star3="";
 $star33="";
 
-/////////////////////////////////////////////////////////Blog Directory Name///////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////Blog Top Section (Use of Article Class)///////////////////////////////////////////////////////////////////////
 
 $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='140' and ezcontentobject.status='1' order by published desc limit 0,1");
 		//$startbody1.='<ul class="speedhorse_list">';
@@ -88,37 +80,26 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 			if($key=='1'){
 					$author1=$value->toString();
 					$author=explode('|',$author1);
-					
 					}		
-							
-			if($key=='3'){
+			if($key=='2'){
 				$summary1=$value->toString();
 				$summary=substr($summary1,0,650);
 				}
-						
-			
-									
-		break;
-        default: 
+			break;
+			default: 
 		} //end of switch
 	}//end of inner foreach	
 				
-						$startbody0.='<a href="http://sandbox.sppedhorse.com/'.$path.'"><img src="http://sandbox.sppedhorse.com/'.$imagePath.'" class="post_img" /></a>
+				$startbody0.='<a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'"><img src="http://localhost/ez45/'.$imagePath.'" class="post_img" /></a>
                 <div class="post_content">
-                    <h2><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h2>
-                    <p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$author[0].'</a></p>
-                    <p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'</a></p>
-                    <a href="http://sandbox.sppedhorse.com/'.$path.'" class="read-more">Read More &raquo;</a>
+                    <h2><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h2>
+                    <p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$author[0].'</a></p>
+                    <p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
+                    <a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'" class="read-more">Read More &raquo;</a>
                 </div>';
-						
-	
 }
-//$startbody1.='</ul>';
-
 $myoutput0=$startbody0;
 $tpl->setVariable( 'myoutput0', $myoutput0);
-
-
 
 /////////////////////////////////////////////////////////Blog Directory Name///////////////////////////////////////////////////////////////////////////
 
@@ -126,7 +107,6 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 		//$startbody1.='<ul class="speedhorse_list">';
 		foreach($data as $row)
 		{
-			
 			$path=str_replace('_','-',$row['path']);
 			//print $path;
 			$co = eZContentObject::fetch($row['id']);
@@ -134,52 +114,37 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 			//print_r($datamap);
 			foreach( $datamap as $key => $value ) //looping through each field
 			{
-			
 				$type = $value->dataType(); //looking at what type the current field is
     			switch( $type->DataTypeString ) //base the switch on the type name
     			{
-        	case 'ezimage':
-            $content = $value->attribute( 'content' ); 
-            $displayText = $content->displayText();
-            $imageAlias = $content->imageAlias('original');
-            $imagePath = $imageAlias['url'];
-            //$cli->output( "$key: $displayText ($imagePath)" );
-			//print "$key: $displayText ($imagePath)";
-			
-            break;
-        	case 'ezstring': //for basic text & ints
-			case 'ezselection':
-        	case 'eztext':
-        	case 'ezint':
-        	case 'ezfloat':
-			case 'ezxmltext':
-			case 'ezauthor':
-			
-			/*if($key=='4'){
-				print $value->toString()."aaa";
-				}*/
-
-			if($key=='0'){
-				$title=$value->toString();
-				//print $title;
-				}
-			
-									
-		break;
-        default: 
-		} //end of switch
-	}//end of inner foreach	
-				
-						$startbody.='<a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a>';
-						
-	
+				case 'ezimage':
+				$content = $value->attribute( 'content' ); 
+				$displayText = $content->displayText();
+				$imageAlias = $content->imageAlias('original');
+				$imagePath = $imageAlias['url'];
+				//$cli->output( "$key: $displayText ($imagePath)" );
+				//print "$key: $displayText ($imagePath)";
+            	break;
+				case 'ezstring': //for basic text & ints
+				case 'ezselection':
+				case 'eztext':
+				case 'ezint':
+				case 'ezfloat':
+				case 'ezxmltext':
+				case 'ezauthor':
+				if($key=='0'){
+					$title=$value->toString();
+					//print $title;
+					}
+				break;
+				default: 							
+			} //end of switch
+		}//end of inner foreach	
+						$startbody.='<a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a>';
 }
-//$startbody1.='</ul>';
-
 $myoutput=$startbody;
 $tpl->setVariable( 'myoutput', $myoutput);
-
-		
+	
 		
 ///////////////////////////////////////////////////Blog Category Name//////////////////////////////////////////////////////////////////////////////////////////////////
 $optionArray=array();
@@ -204,12 +169,11 @@ $data1=$db->arrayQuery("SELECT data_text5 FROM `ezcontentclass_attribute` WHERE 
                         }        
 
 
-
 ////////////////////////////////////////////Blog Post Fot CAT A /////////////////////////////////////////////////
 $chk=0;
 $chk1=0;
 $chk2=0;
-$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by published desc ");
+$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner,ezcontentobject.published as publish, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by published desc ");
 		
 		foreach($data2 as $row)
 		{
@@ -283,7 +247,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 						case 'ezfloat':
 						case 'ezxmltext':
 						case 'ezauthor':
-						
+						case 'ezdatetime':
 						/*if($key=='4'){
 							print $value->toString()."aaa";
 							}*/
@@ -303,7 +267,10 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$summary1=$value->toString();
 									$summary=substr($summary1,0,325);
 									}
-											
+								if($key=='4'){
+									$publishdate1=$value->toString();
+									$publishdate=date("D, F d, Y", $publishdate1);
+									}						
 									break;
 									default: 
 							} //end of switch
@@ -311,20 +278,20 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							if($chk==0)
 							{
 							$startbody2.='<div class="post" style="margin-right:20px; height:180px;">
-							<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+							<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-									<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+									<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+									<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+									<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+									<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
+									<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 								</div>
 								<div class="post_foot">
-									<span class="posted">Posted on: Friday, Apr 1, 2011</span><br />
+									<span class="posted">Posted on: '.$publishdate.'</span><br />
 
-									<h4><span class="comments">21 Comments <cite>|</cite></span>
+									<span class="comments">21 Comments <cite>|</cite></span>
 									<span class="views">219 Views <cite>|</cite></span>
-									<span>Rating <span>'.$star1.$star11.'</span></span></h4>
+									<span class="rating"><span>&nbsp;&nbsp;Rating '.$star1.'</span>'.$star11.'</span>
 								</div><!--end div.post_foot-->
 							</div>';
 									$star1="";
@@ -334,20 +301,20 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							if($chk==1)
 							{
 							$startbody2.='<div class="post" style="height:180px;">
-								<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author" width="87px" height="100px"/></a>
+								<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author" width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-									<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+									<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+									<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+									<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+									<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
+									<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 								</div><!--end div.post_right-->
 								<div class="post_foot">
-									<span class="posted">Posted on: Friday, Apr 1, 2011</span><br />
+									<span class="posted">Posted on: '.$publishdate.'</span><br />
 
-									<h4><span class="comments">21 Comments <cite>|</cite></span>
+									<span class="comments">21 Comments <cite>|</cite></span>
 									<span class="views">219 Views <cite>|</cite></span>
-									<span>Rating <span>'.$star1.$star11.'</span></span></h4>
+									<span class="rating"><span>&nbsp;&nbsp;Rating '.$star1.'</span>'.$star11.'</span>
 								</div><!--end div.post_foot-->
 							</div>';
 									$star1="";
@@ -360,6 +327,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 				{
 						//////Owner////////////////////////////
 							$currentUser = eZUser::fetch($row['owner']);
+							//print $row['owner'];
 							$contentObject = $currentUser->attribute( 'contentobject' );
 							$dataMap1 = $contentObject->attribute( 'data_map' );
 							{
@@ -425,7 +393,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 								case 'ezfloat':
 								case 'ezxmltext':
 								case 'ezauthor':
-								
+								case 'ezdatetime':
 								/*if($key=='4'){
 									print $value->toString()."aaa";
 									}*/
@@ -445,7 +413,10 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$summary1=$value->toString();
 									$summary=substr($summary1,0,325);
 									}
-											
+								if($key=='4'){
+									$publishdate1=$value->toString();
+									$publishdate=date("D, F d, Y", $publishdate1);
+									}				
 							break;
 							default: 
 							} //end of switch
@@ -453,38 +424,38 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									if($chk1==0)
 									{
 									$startbody3.='<div class="post" style="margin-right:20px;">
-									<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+									<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-											<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+											<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+											<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+											<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+											<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
+											<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 										</div>
 										<div class="post_foot">
-											<span class="posted">Posted on: Friday, Apr 1, 2011</span>
+											<span class="posted">Posted on: '.$publishdate.'</span>
 											<span class="comments">21 Comments <cite>|</cite></span>
 											<span class="views">219 Views <cite>|</cite></span>
-											<span class="rating">Rating <span>'.$star2.$star22.'</span></span>
+											<span class="rating"><span>&nbsp;&nbsp;Rating '.$star2.'</span>'.$star22.'</span>
 										</div><!--end div.post_foot-->
 									</div>';
 									}
 									if($chk1==1)
 									{
 									$startbody3.='<div class="post">
-										<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+										<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-											<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+											<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+											<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+											<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+											<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
+											<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 										</div><!--end div.post_right-->
 										<div class="post_foot">
-											<span class="posted">Posted on: Friday, Apr 1, 2011</span>
+											<span class="posted">Posted on: '.$publishdate.'</span>
 											<span class="comments">21 Comments <cite>|</cite></span>
 											<span class="views">219 Views <cite>|</cite></span>
-											<span class="rating">Rating <span>'.$star2.$star22.'</span></span>
+											<span class="rating"><span>&nbsp;&nbsp;Rating '.$star2.'</span>'.$star22.'</span>
 										</div><!--end div.post_foot-->
 									</div>';
 									}
@@ -565,7 +536,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 				case 'ezfloat':
 				case 'ezxmltext':
 				case 'ezauthor':
-				
+				case 'ezdatetime':
 				/*if($key=='4'){
 					print $value->toString()."aaa";
 					}*/
@@ -585,7 +556,10 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					$summary1=$value->toString();
 					$summary=substr($summary1,0,325);
 					}
-							
+				if($key=='4'){
+					$publishdate1=$value->toString();
+					$publishdate=date("D, F d, Y", $publishdate1);
+					}				
 			break;
 			default: 
 			} //end of switch
@@ -593,38 +567,38 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					if($chk2==0)
 					{
 					$startbody4.='<div class="post" style="margin-right:20px;">
-					<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+					<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-							<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+							<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+							<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+							<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+							<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
+							<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 						</div>
 						<div class="post_foot">
-							<span class="posted">Posted on: Friday, Apr 1, 2011</span>
+							<span class="posted">Posted on: '.$publishdate.'</span>
 							<span class="comments">21 Comments <cite>|</cite></span>
 							<span class="views">219 Views <cite>|</cite></span>
-							<span class="rating">Rating <span>'.$star3.$star33.'</span></span>
+							<span class="rating"><span>&nbsp;&nbsp;Rating '.$star3.'</span>'.$star33.'</span>
 						</div><!--end div.post_foot-->
 					</div>';
 					}
 					if($chk2==1)
 					{
 					$startbody4.='<div class="post">
-						<a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.sppedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+						<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></h4>
-							<cite><a href="http://sandbox.sppedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://sandbox.sppedhorse.com/'.$path.'">Read More &raquo;</a></em>
+							<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
+							<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+							<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
+							<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
+							<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
 						</div><!--end div.post_right-->
 						<div class="post_foot">
-							<span class="posted">Posted on: Friday, Apr 1, 2011</span>
+							<span class="posted">Posted on: '.$publishdate.'</span>
 							<span class="comments">21 Comments <cite>|</cite></span>
 							<span class="views">219 Views <cite>|</cite></span>
-							<span class="rating">Rating <span>'.$star3.$star33.'</span></span>
+							<span class="rating"><span>&nbsp;&nbsp;Rating '.$star3.'</span>'.$star33.'</span>
 						</div><!--end div.post_foot-->
 					</div>';
 					}
@@ -645,41 +619,12 @@ $tpl->setVariable( 'myoutput3', $myoutput3);
 $myoutput4=$startbody4;
 $tpl->setVariable( 'myoutput4', $myoutput4);
 
-////////////////////////////////////////////FRONT PAGE SMALL ADD/////////////////////////////////////////////////////
-
-
-$data5=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='131' and ezcontentobject.status='1' order by published desc limit 0,1");
-		
-		foreach($data5 as $row)
-		{
-			
-			$path=str_replace('_','-',$row['path']);
-			$co = eZContentObject::fetch($row['id']);
-			$datamap =  $co->contentObjectAttributes('data_map');
-			foreach( $datamap as $key => $value ) //looping through each field
-			{
-				$type = $value->dataType(); //looking at what type the current field is
-    			switch( $type->DataTypeString ) //base the switch on the type name
-    			{
-        	case 'ezimage':
-            $content = $value->attribute( 'content' ); 
-            $displayText = $content->displayText();
-            $imageAlias = $content->imageAlias('original');
-            $imagePath = $imageAlias['url'];
-		break;
-        default: 
-		} //end of switch
-	}//end of inner foreach
-						$startbody5.='<a href="http://sandbox.sppedhorse.com/'.$path.'"><img src="http://sandbox.sppedhorse.com/'.$imagePath.'"  width="300px" height="100px"/></a>';
-}
-$myoutput5=$startbody5;
-$tpl->setVariable( 'myoutput5', $myoutput5);
 
 ////////////////////////////////////////////FRONT PAGE BIG ADD/////////////////////////////////////////////////////
 
-$data6=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='130' and ezcontentobject.status='1' order by published desc  limit 0,1");
+$data5=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='130' and ezcontentobject.status='1' order by published desc  limit 0,1");
 		
-		foreach($data6 as $row)
+		foreach($data5 as $row)
 		{
 			$path=str_replace('_','-',$row['path']);
 			$co = eZContentObject::fetch($row['id']);
@@ -697,19 +642,19 @@ $data6=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-						$startbody6.='<a href="http://sandbox.sppedhorse.com/'.$path.'"><img src="http://sandbox.sppedhorse.com/'.$path.''.$imagePath.'"  width="300px" height="250px"/></a>';
+						$startbody5.='<a href="http://localhost/ez45/'.$path.'"><img src="http://localhost/ez45/'.$imagePath.'"  width="300px" height="250px"/></a>';
 }
 
-$myoutput6=$startbody6;
-$tpl->setVariable( 'myoutput6', $myoutput6);
+$myoutput5=$startbody5;
+$tpl->setVariable( 'myoutput5', $myoutput5);
 
 
 ////////////////////////////////////////////FEATURE HEADLINE ARTICLE START FROM HERE
 
 
-$data7=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='129' and ezcontentobject.status='1' order by published desc limit 0,7");
+$data6=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='129' and ezcontentobject.status='1' order by published desc limit 0,7");
 		//$startbody4.='<ul class="speedhorse_list">';
-		foreach($data7 as $row)
+		foreach($data6 as $row)
 		{
 			
 			$path=str_replace('_','-',$row['path']);
@@ -751,81 +696,14 @@ $data7=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-			$startbody7.='<li><a href="http://sandbox.sppedhorse.com/'.$path.'">'.$title.'</a></li>';
+			$startbody6.='<li><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></li>';
 }
 //$startbody4.='</ul>';
 
-$myoutput7=$startbody7;
-$tpl->setVariable( 'myoutput7', $myoutput7);
-
-
-////////////////////////////////////////////Normal Article ////////////////////////////////////////////////////////////////////////////
-
-$chk=0;
-$data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='16' and ezcontentobject.status='1' order by published desc LIMIT 0,2");
-		
-		foreach($data9 as $row)
-		{
-			
-			$path=str_replace('_','-',$row['path']);
-			
-			$co = eZContentObject::fetch($row['id']);
-			$datamap =  $co->contentObjectAttributes('data_map');
-			//print_r($datamap);
-			foreach( $datamap as $key => $value ) //looping through each field
-			{
-			
-				$type = $value->dataType(); //looking at what type the current field is
-    			switch( $type->DataTypeString ) //base the switch on the type name
-    			{
-        	case 'ezimage':
-            $content = $value->attribute( 'content' ); 
-            $displayText = $content->displayText();
-            $imageAlias = $content->imageAlias('original');
-            $imagePath = $imageAlias['url'];
-            //$cli->output( "$key: $displayText ($imagePath)" );
-			//print "$key: $displayText ($imagePath)";
-			
-            break;
-        	case 'ezstring': //for basic text & ints
-		
-        	case 'eztext':
-        	case 'ezint':
-        	case 'ezfloat':
-			case 'ezxmltext':
-			case 'ezauthor':
-			
-			/*if($key=='4'){
-				print $value->toString()."aaa";
-				}*/
-
-			if($key=='0'){
-				$title=$value->toString();
-				}
-								
-		break;
-        default: 
-		} //end of switch
-	}//end of inner foreach
-				if($chk=='0')
-				{
-					$startbody9.='<div class="post" style="background-image:url(http://sandbox.speedhorse.com/'.$imagePath.');">
-                	<a href="http://sandbox.speedhorse.com/'.$path.'"><h3>'.$title.'</h3></a></div>';
-				}
-				elseif($chk=='1')
-				{
-				$startbody9.='<div class="post right_post" style="background-image:url(http://sandbox.speedhorse.com/'.$imagePath.');">
-                	<a href="http://sandbox.speedhorse.com/'.$path.'"><h3>'.$title.'</h3></a></div>';
-				}
-				$chk=$chk+1;
-}
-
-$myoutput9=$startbody9;
-$tpl->setVariable( 'myoutput9', $myoutput9);
+$myoutput6=$startbody6;
+$tpl->setVariable( 'myoutput6', $myoutput6);
 
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:spblogs/spblogs.tpl' );
-
-
 
 ?>
