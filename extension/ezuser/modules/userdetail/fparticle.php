@@ -60,6 +60,16 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
             //$cli->output( "$key: $displayText ($imagePath)" );
 			//print "$key: $displayText ($imagePath)";
 			
+				if($imagePath!="")
+				{
+					//$tpl->setVariable( 'imagePath', $imagePath );
+				}
+				else
+				{
+					$imagePath="var/ezwebin_site/storage/images/noimages.jpg";
+					//$tpl->setVariable( 'imagePath', $imagePath );
+				}
+			
             break;
         	case 'ezstring': //for basic text & ints
 			case 'ezselection':
