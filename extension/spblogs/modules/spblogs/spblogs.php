@@ -300,7 +300,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 
 									<span class="comments">21 Comments <cite>|</cite></span>
 									<span class="views">219 Views <cite>|</cite></span>
-									<span class="rating"><span>&nbsp;&nbsp;Rating '.$star1.'</span>'.$star11.'</span>
+									<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star1.'</span>'.$star11.'</span>
 								</div><!--end div.post_foot-->
 							</div>';
 									$star1="";
@@ -323,7 +323,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 
 									<span class="comments">21 Comments <cite>|</cite></span>
 									<span class="views">219 Views <cite>|</cite></span>
-									<span class="rating"><span>&nbsp;&nbsp;Rating '.$star1.'</span>'.$star11.'</span>
+									<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star1.'</span>'.$star11.'</span>
 								</div><!--end div.post_foot-->
 							</div>';
 									$star1="";
@@ -440,7 +440,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 						}//end of inner foreach
 									if($chk1==0)
 									{
-									$startbody3.='<div class="post" style="margin-right:20px;" height:180px;">
+									$startbody3.='<div class="post" style="margin-right:20px;height:180px;">
 									<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
 											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
@@ -453,13 +453,13 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 											<span class="posted">Posted on: '.$publishdate.'</span>
 											<span class="comments">21 Comments <cite>|</cite></span>
 											<span class="views">219 Views <cite>|</cite></span>
-											<span class="rating"><span>&nbsp;&nbsp;Rating '.$star2.'</span>'.$star22.'</span>
+											<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star2.'</span>'.$star22.'</span>
 										</div><!--end div.post_foot-->
 									</div>';
 									}
 									if($chk1==1)
 									{
-									$startbody3.='<div class="post"  height:180px;">
+									$startbody3.='<div class="post"  style="height:180px;">
 										<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
 											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
@@ -472,7 +472,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 											<span class="posted">Posted on: '.$publishdate.'</span>
 											<span class="comments">21 Comments <cite>|</cite></span>
 											<span class="views">219 Views <cite>|</cite></span>
-											<span class="rating"><span>&nbsp;&nbsp;Rating '.$star2.'</span>'.$star22.'</span>
+											<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star2.'</span>'.$star22.'</span>
 										</div><!--end div.post_foot-->
 									</div>';
 									}
@@ -591,7 +591,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 		}//end of inner foreach
 					if($chk2==0)
 					{
-					$startbody4.='<div class="post" style="margin-right:20px;"  height:180px;">
+					$startbody4.='<div class="post" style="margin-right:20px;height:180px;">
 					<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
 							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
@@ -604,13 +604,13 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							<span class="posted">Posted on: '.$publishdate.'</span>
 							<span class="comments">21 Comments <cite>|</cite></span>
 							<span class="views">219 Views <cite>|</cite></span>
-							<span class="rating"><span>&nbsp;&nbsp;Rating '.$star3.'</span>'.$star33.'</span>
+							<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star3.'</span>'.$star33.'</span>
 						</div><!--end div.post_foot-->
 					</div>';
 					}
 					if($chk2==1)
 					{
-					$startbody4.='<div class="post"  height:180px;">
+					$startbody4.='<div class="post"  style="height:180px;">
 						<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
 							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
@@ -623,7 +623,7 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							<span class="posted">Posted on: '.$publishdate.'</span>
 							<span class="comments">21 Comments <cite>|</cite></span>
 							<span class="views">219 Views <cite>|</cite></span>
-							<span class="rating"><span>&nbsp;&nbsp;Rating '.$star3.'</span>'.$star33.'</span>
+							<span class="rating"><span>&nbsp;&nbsp;Rating &nbsp;'.$star3.'</span>'.$star33.'</span>
 						</div><!--end div.post_foot-->
 					</div>';
 					}
