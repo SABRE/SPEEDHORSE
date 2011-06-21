@@ -90,12 +90,12 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 		} //end of switch
 	}//end of inner foreach	
 				
-				$startbody0.='<a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'"><img src="http://localhost/ez45/'.$imagePath.'" class="post_img" /></a>
+				$startbody0.='<a href="http://sandbox.speedhorse.com/'.$path.'"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" class="post_img" /></a>
                 <div class="post_content">
-                    <h2><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h2>
-                    <p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$author[0].'</a></p>
-                    <p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
-                    <a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'" class="read-more">Read More &raquo;</a>
+                    <h2><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h2>
+                    <p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$author[0].'</a></p>
+                    <p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'</a></p>
+                    <a href="http://sandbox.speedhorse.com/'.$path.'" class="read-more">Read More &raquo;</a>
                 </div>';
 }
 $myoutput0=$startbody0;
@@ -140,7 +140,7 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 				default: 							
 			} //end of switch
 		}//end of inner foreach	
-						$startbody.='<a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a>';
+						$startbody.='<a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a>';
 }
 $myoutput=$startbody;
 $tpl->setVariable( 'myoutput', $myoutput);
@@ -194,6 +194,15 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$displayText = $content->displayText();
 									$imageAlias = $content->imageAlias('original');
 									$imagePathuser = $imageAlias['url'];
+		
+									if($imagePathuser!="")
+										{
+										
+										}
+									else
+										{
+										$imagePathuser="var/ezwebin_site/storage/images/noimages.jpg";
+										}
 							//$cli->output( "$key: $displayText ($imagePath)" );
 							//print "$key: $displayText ($imagePath)";
 									break;
@@ -278,13 +287,13 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							if($chk==0)
 							{
 							$startbody2.='<div class="post" style="margin-right:20px; height:180px;">
-							<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+							<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-									<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+									<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+									<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+									<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'</a></p>
+									<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 								</div>
 								<div class="post_foot">
 									<span class="posted">Posted on: '.$publishdate.'</span><br />
@@ -301,13 +310,13 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							if($chk==1)
 							{
 							$startbody2.='<div class="post" style="height:180px;">
-								<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author" width="87px" height="100px"/></a>
+								<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author" width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-									<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+									<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+									<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+									<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'</a></p>
+									<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 								</div><!--end div.post_right-->
 								<div class="post_foot">
 									<span class="posted">Posted on: '.$publishdate.'</span><br />
@@ -341,6 +350,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$displayText = $content->displayText();
 									$imageAlias = $content->imageAlias('original');
 									$imagePathuser = $imageAlias['url'];
+									if($imagePathuser!="")
+										{
+										
+										}
+									else
+										{
+										$imagePathuser="var/ezwebin_site/storage/images/noimages.jpg";
+										}
 							//$cli->output( "$key: $displayText ($imagePath)" );
 							//print "$key: $displayText ($imagePath)";
 									break;
@@ -423,14 +440,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 						}//end of inner foreach
 									if($chk1==0)
 									{
-									$startbody3.='<div class="post" style="margin-right:20px;">
-									<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+									$startbody3.='<div class="post" style="margin-right:20px;" height:180px;">
+									<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-											<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+											<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+											<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+											<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
+											<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 										</div>
 										<div class="post_foot">
 											<span class="posted">Posted on: '.$publishdate.'</span>
@@ -442,14 +459,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									}
 									if($chk1==1)
 									{
-									$startbody3.='<div class="post">
-										<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+									$startbody3.='<div class="post"  height:180px;">
+										<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-											<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+											<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+											<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+											<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
+											<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 										</div><!--end div.post_right-->
 										<div class="post_foot">
 											<span class="posted">Posted on: '.$publishdate.'</span>
@@ -481,6 +498,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$displayText = $content->displayText();
 									$imageAlias = $content->imageAlias('original');
 									$imagePathuser = $imageAlias['url'];
+									if($imagePathuser!="")
+										{
+										
+										}
+									else
+										{
+										$imagePathuser="var/ezwebin_site/storage/images/noimages.jpg";
+										}
 							//$cli->output( "$key: $displayText ($imagePath)" );
 							//print "$key: $displayText ($imagePath)";
 									break;
@@ -566,14 +591,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 		}//end of inner foreach
 					if($chk2==0)
 					{
-					$startbody4.='<div class="post" style="margin-right:20px;">
-					<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+					$startbody4.='<div class="post" style="margin-right:20px;"  height:180px;">
+					<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-							<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+							<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+							<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+							<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
+							<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 						</div>
 						<div class="post_foot">
 							<span class="posted">Posted on: '.$publishdate.'</span>
@@ -585,14 +610,14 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					}
 					if($chk2==1)
 					{
-					$startbody4.='<div class="post">
-						<a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'"><img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
+					$startbody4.='<div class="post"  height:180px;">
+						<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></h4>
-							<cite><a href="http://localhost/ez45/index.php/ezwebin_site/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">Read More &raquo;</a></em>
+							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+							<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
+							<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
+							<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
+							<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
 						</div><!--end div.post_right-->
 						<div class="post_foot">
 							<span class="posted">Posted on: '.$publishdate.'</span>
@@ -642,7 +667,7 @@ $data5=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-						$startbody5.='<a href="http://localhost/ez45/'.$path.'"><img src="http://localhost/ez45/'.$imagePath.'"  width="300px" height="250px"/></a>';
+						$startbody5.='<a href="http://sandbox.speedhorse.com/'.$path.'"><img src="http://sandbox.speedhorse.com/'.$imagePath.'"  width="300px" height="250px"/></a>';
 }
 
 $myoutput5=$startbody5;
@@ -696,7 +721,7 @@ $data6=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-			$startbody6.='<li><a href="http://localhost/ez45/index.php/ezwebin_site/'.$path.'">'.$title.'</a></li>';
+			$startbody6.='<li><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></li>';
 }
 //$startbody4.='</ul>';
 
