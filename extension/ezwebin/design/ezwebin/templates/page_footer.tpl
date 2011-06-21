@@ -32,13 +32,13 @@
 				<div class="colophon_cols">
 					<ul>
 						<li><h6>blogs</h6></li>
-						<li><a href="/BLOGS/BLOG-NAME-WILL-GO-HERE2">Blog Title #1</a></li>
-						<li><a href="/BLOGS/Blog-name-goes-here">Blog Title #2</a></li>
-						<li><a href="/BLOGS/blog-name-will-go-here">Blog Title #3</a></li>
-						<li><a href="/BLOGS/Hello">Blog Title #4</a></li>
-						<li><a href="/BLOGS/Test-Blog">Blog Title #5</a></li>
-						<li><a href="/BLOGS/Test-From-Richard">Blog Title #6</a></li>
-						<li><a href="/BLOGS/My-Fifth-blog">Blog Title #7</a></li>
+						<li><a href="/Blog/Blog-A/Blog-Name-Goes-Here-1">Blog Title #1</a></li>
+						<li><a href="/Blog/Blog-A/Blog-Name-Goes-Here2">Blog Title #2</a></li>
+						<li><a href="/Blog/Blog-B/Blog-Title-Goes-Here3">Blog Title #3</a></li>
+						<li><a href="/Blog/Blog-C/Blog-Title-Goes-Here-4">Blog Title #4</a></li>
+						<li><a href="/Blog/Blog-C/Blog-Title-Goes-here-5">Blog Title #5</a></li>
+						<li><a href="/Blog/Blog-B/Blog-Title-Goes-Here-6">Blog Title #6</a></li>
+						<li><a href="/Blog/Blog-Title-Goes-Here">Blog Title #7</a></li>
 					</ul>
 				</div>
 				<div class="colophon_cols">

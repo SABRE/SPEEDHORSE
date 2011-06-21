@@ -60,17 +60,7 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
             //$cli->output( "$key: $displayText ($imagePath)" );
 			//print "$key: $displayText ($imagePath)";
 			
-				if($imagePath!="")
-				{
-					//$tpl->setVariable( 'imagePath', $imagePath );
-				}
-				else
-				{
-					$imagePath="var/ezwebin_site/storage/images/noimages.jpg";
-					//$tpl->setVariable( 'imagePath', $imagePath );
-				}
-			
-            break;
+	        break;
         	case 'ezstring': //for basic text & ints
 			case 'ezselection':
         	case 'eztext':
@@ -549,8 +539,6 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					}
 				}	
 /*			
-			
-			
 			if($data10['0']['rating_average']=='0')
 				{
 				$startbody10='<span class="unattained_star">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>';
@@ -575,7 +563,8 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 				{
 				$startbody10='&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;';
 				}					
-*/			///////////////////////////////////////////////////////////////////////////////////////////////////////
+*/			
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			$currentUser = eZUser::fetch($row['ownerid']);
 			$contentObject = $currentUser->attribute( 'contentobject' );
 			$dataMap1 = $contentObject->attribute( 'data_map' );
@@ -590,6 +579,15 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
             		$displayText = $content->displayText();
             		$imageAlias = $content->imageAlias('original');
             		$imagePathuser = $imageAlias['url'];
+					if($imagePathuser!="")
+					{
+						//$tpl->setVariable( 'imagePath', $imagePath );
+					}
+					else
+					{
+						$imagePathuser="var/ezwebin_site/storage/images/noimages.jpg";
+						//$tpl->setVariable( 'imagePath', $imagePath );
+					}
 			//$cli->output( "$key: $displayText ($imagePath)" );
 			//print "$key: $displayText ($imagePath)";
             		break;
@@ -654,8 +652,6 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-if($imagePath!="")
-{
 $body=substr($body1,0,325);
 $startbody9.='<div class="post">
 							<img class="post_thumbnail" src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="post_thumbnail"  width="33px" height="33px"/>
@@ -674,35 +670,112 @@ $startbody9.='<div class="post">
 						</div>';
 $startbody10="";
 $startbody11="";						
-}
-else
-{
-$body=substr($body1,0,500);
-$startbody9.='<div class="post">
-							<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/noimages.jpg" alt="post_thumbnail"  width="33px" height="33px" />
-							<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
-							<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>
-							<div class="post_excerpt">
-							<h6><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h6>
-							'.$body.'
-							</div>
-							<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/'.$path.'" class="more_link">read more &#xBB;</a></div>
-							<div class="post_meta">
-								<h6 class="post_date">posted on: '.$publishdate.'</h6>
-								<h4><a href="http://sandbox.speedhorse.com/'.$path.'">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">rating</a> '.$startbody10.$startbody11.'</h4>
-							</div>
-						</div>';
-$startbody10="";
-$startbody11="";						
-}
-	
 	
 }
 
 $myoutput9=$startbody9;
 $tpl->setVariable( 'myoutput9', $myoutput9 );
 
+////////////////////////////////////////////News Sponsored/////////////////////////////////////////////////
 
+$data10=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='142' and ezcontentobject.status='1' order by published desc limit 0,1");
+		//$startbody8.='<ul class="speedhorse_list">';
+		foreach($data10 as $row)
+		{
+			
+			$path=str_replace('_','-',$row['path']);
+			
+			$co = eZContentObject::fetch($row['id']);
+			$datamap =  $co->contentObjectAttributes('data_map');
+			//print_r($datamap);
+			foreach( $datamap as $key => $value ) //looping through each field
+			{
+			
+				$type = $value->dataType(); //looking at what type the current field is
+    			switch( $type->DataTypeString ) //base the switch on the type name
+    			{
+        	case 'ezimage':
+            $content = $value->attribute( 'content' ); 
+            $displayText = $content->displayText();
+            $imageAlias = $content->imageAlias('original');
+            $imagePath = $imageAlias['url'];
+            //$cli->output( "$key: $displayText ($imagePath)" );
+			//print "http://localhost/ez45/".$imagePath;
+			
+            break;
+        	case 'ezstring': //for basic text & ints
+		
+        	case 'eztext':
+        	case 'ezint':
+        	case 'ezfloat':
+			case 'ezxmltext':
+			case 'ezauthor':
+			/*if($key=='4'){
+				print $value->toString()."aaa";
+				}*/
+			if($key=='8'){
+				$website=$value->toString();
+				//print $website;
+				}
+			
+		break;
+        default: 
+		} //end of switch
+	}//end of inner foreach
+						$startbody10.='<a id="features_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="154px" height="28px"/></a>';
+}
+
+////////////////////////////////////////////Sponsored blog/////////////////////////////////////////////////
+
+$data11=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='141' and ezcontentobject.status='1' order by published desc limit 0,1");
+		//$startbody8.='<ul class="speedhorse_list">';
+		foreach($data11 as $row)
+		{
+			
+			$path=str_replace('_','-',$row['path']);
+			
+			$co = eZContentObject::fetch($row['id']);
+			$datamap =  $co->contentObjectAttributes('data_map');
+			//print_r($datamap);
+			foreach( $datamap as $key => $value ) //looping through each field
+			{
+			
+				$type = $value->dataType(); //looking at what type the current field is
+    			switch( $type->DataTypeString ) //base the switch on the type name
+    			{
+        	case 'ezimage':
+            $content = $value->attribute( 'content' ); 
+            $displayText = $content->displayText();
+            $imageAlias = $content->imageAlias('original');
+            $imagePath = $imageAlias['url'];
+            //$cli->output( "$key: $displayText ($imagePath)" );
+			//print "http://localhost/ez45/".$imagePath;
+			
+            break;
+        	case 'ezstring': //for basic text & ints
+		
+        	case 'eztext':
+        	case 'ezint':
+        	case 'ezfloat':
+			case 'ezxmltext':
+			case 'ezauthor':
+			/*if($key=='4'){
+				print $value->toString()."aaa";
+				}*/
+			if($key=='8'){
+				$website=$value->toString();
+				//print $website;
+				}
+			
+		break;
+        default: 
+		} //end of switch
+	}//end of inner foreach
+						$startbody11.='<a id="blogs_preview_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="104px" height="28px"/></a>';
+}
+
+$myoutput11=$startbody11;
+$tpl->setVariable( 'myoutput11', $myoutput11);
 
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:userdetail/fparticle.tpl' );

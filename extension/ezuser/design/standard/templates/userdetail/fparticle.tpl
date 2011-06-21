@@ -163,7 +163,7 @@ window.onload = initSlideShow;
 		
 		<div id="features">
 				<h2 class="section_title">featured stories</h2>
-				<a id="features_ad_link" href="#"></a>
+				{$myoutput10}
 				<div id="features_content">
 					<table id="features_table">
 						<colgroup>
@@ -178,7 +178,7 @@ window.onload = initSlideShow;
 		<div id="blogs_preview_wrap">
 				<div id="blogs_preview">
 					<h2 class="section_title">from the speedhorse blogs</h2>
-					<a id="blogs_preview_ad_link" href="http://www.xpressbet.com/" target="_blank"></a>
+					{$myoutput11}
 
 					<div>
 						{$myoutput9}
