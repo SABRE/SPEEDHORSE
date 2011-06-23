@@ -19,9 +19,9 @@ SessionNamePerSiteAccess=disabled
 [SiteSettings]
 IndexPage=/userdetail/fparticle
 SiteName=Speed Horse (Sandbox)
-SiteURL=sandbox.speedhorse.com
+SiteURL=www.sp7.us
 LoginPage=embedded
-AdditionalLoginFormActionURL=http://admin.sandbox.speedhorse.com/user/login
+AdditionalLoginFormActionURL=http://admin.sp7.us/user/login
 
 [UserSettings]
 RegistrationEmail=
