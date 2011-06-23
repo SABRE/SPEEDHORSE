@@ -67,7 +67,7 @@ HostMatchMapItems[]=sandbox.speedhorse.com;eng
 HostMatchMapItems[]=esl.1;esl
 HostMatchMapItems[]=fre.1;fre
 HostMatchMapItems[]=barrelsires.com;oklahoma_admin
-HostMatchMapItems[]=spltdco.com;iphone
+HostMatchMapItems[]=sp8.us;iphone
 ForceVirtualHost=false
 
 [DesignSettings]
