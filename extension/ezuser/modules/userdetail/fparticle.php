@@ -33,6 +33,11 @@ $startbody9='';
 $myoutput9='';			
 $startbody10='';
 $myoutput10='';			
+$startbody11='';
+$myoutput11='';			
+$startbody12='';
+$myoutput12='';			
+
 
 $chk1=1;	
 $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='127' and ezcontentobject.status='1' order by published desc limit 0,8");
@@ -652,25 +657,48 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
         default: 
 		} //end of switch
 	}//end of inner foreach
-$body=substr($body1,0,325);
-$startbody9.='<div class="post">
-							<img class="post_thumbnail" src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="post_thumbnail"  width="33px" height="33px"/>
-							<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
-							<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>
-							<div class="post_excerpt">
-								<img class="post_content_image" src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_content_image" style="width:87px;height=100px;"/>
+	if($imagePath!="")
+	{
+	$body=substr($body1,0,325);
+	$startbody9.='<div class="post">
+								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="post_thumbnail"  width="33px" height="33px"/>
+								<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
+								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>
+								<div class="post_excerpt">
+									<img class="post_content_image" src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_content_image" style="width:87px;height=100px;"/>
+									<h6><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h6>
+									'.$body.'
+								</div>
+								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/'.$path.'" class="more_link">read more &#xBB;</a></div>
+								<div class="post_meta">
+									<h6 class="post_date">posted on: '.$publishdate.'</h6>
+									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">rating</a> '.$startbody10.$startbody11.'</h4>
+								</div>
+							</div>';
+	$startbody10="";
+	$startbody11="";						
+	}
+	else
+	{
+	$body=substr($body1,0,500);
+	$startbody9.='<div class="post">
+								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/noimages.jpg" alt="post_thumbnail"  width="33px" height="33px" />
+								<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
+								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>
+								<div class="post_excerpt">
 								<h6><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h6>
 								'.$body.'
-							</div>
-							<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/'.$path.'" class="more_link">read more &#xBB;</a></div>
-							<div class="post_meta">
-								<h6 class="post_date">posted on: '.$publishdate.'</h6>
-								<h4><a href="http://sandbox.speedhorse.com/'.$path.'">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">rating</a> '.$startbody10.$startbody11.'</h4>
-							</div>
-						</div>';
-$startbody10="";
-$startbody11="";						
-	
+								</div>
+								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/'.$path.'" class="more_link">read more &#xBB;</a></div>
+								<div class="post_meta">
+									<h6 class="post_date">posted on: '.$publishdate.'</h6>
+									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/'.$path.'">rating</a> '.$startbody10.$startbody11.'</h4>
+								</div>
+							</div>';
+	$startbody10="";
+	$startbody11="";						
+	}
+		
 }
 
 $myoutput9=$startbody9;
@@ -678,9 +706,9 @@ $tpl->setVariable( 'myoutput9', $myoutput9 );
 
 ////////////////////////////////////////////News Sponsored/////////////////////////////////////////////////
 
-$data10=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='142' and ezcontentobject.status='1' order by published desc limit 0,1");
+$data12=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='142' and ezcontentobject.status='1' order by published desc limit 0,1");
 		//$startbody8.='<ul class="speedhorse_list">';
-		foreach($data10 as $row)
+		foreach($data12 as $row)
 		{
 			
 			$path=str_replace('_','-',$row['path']);
@@ -722,14 +750,17 @@ $data10=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS
         default: 
 		} //end of switch
 	}//end of inner foreach
-						$startbody10.='<a id="features_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="154px" height="28px"/></a>';
+						$startbody12.='<a id="features_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="154px" height="28px"/></a>';
 }
+
+$myoutput12=$startbody12;
+$tpl->setVariable( 'myoutput12', $myoutput12);
 
 ////////////////////////////////////////////Sponsored blog/////////////////////////////////////////////////
 
-$data11=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='141' and ezcontentobject.status='1' order by published desc limit 0,1");
+$data13=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='141' and ezcontentobject.status='1' order by published desc limit 0,1");
 		//$startbody8.='<ul class="speedhorse_list">';
-		foreach($data11 as $row)
+		foreach($data13 as $row)
 		{
 			
 			$path=str_replace('_','-',$row['path']);
@@ -771,11 +802,11 @@ $data11=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS
         default: 
 		} //end of switch
 	}//end of inner foreach
-						$startbody11.='<a id="blogs_preview_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="104px" height="28px"/></a>';
+						$startbody13.='<a id="blogs_preview_ad_link" href="'.$website.'" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/'.$imagePath.'" alt="post_thumbnail" width="104px" height="28px"/></a>';
 }
 
-$myoutput11=$startbody11;
-$tpl->setVariable( 'myoutput11', $myoutput11);
+$myoutput13=$startbody13;
+$tpl->setVariable( 'myoutput13', $myoutput13);
 
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:userdetail/fparticle.tpl' );

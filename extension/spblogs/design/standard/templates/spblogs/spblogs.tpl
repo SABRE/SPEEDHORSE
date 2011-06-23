@@ -49,30 +49,13 @@
 		<div id="sidebar">
 			<div id="big_ad_2" style="margin-top:0;float:left;">{$myoutput5}</div>
 
-			<h2 class="section_title" style="float:left;">Tags</h2>
+<h2 class="section_title" style="float:left;">Tags</h2>	
             
-            <div id="blog_tags" style="float:left;">
-            	
-				<a href="#" style="font-size:10px;">horses</a>
-                <a href="#" style="font-size:14px;">stallion</a> 
-                <a href="#" style="font-size:18px;">racing</a> 
-                <a href="#" style="font-size:12px;">results</a>
-                <a href="#" style="font-size:14px;">winner</a> 
-                <a href="#" style="font-size:10px;">horse</a>
-                <a href="#" style="font-size:12px;">betting</a> 
-                <a href="#" style="font-size:16px;">mustang</a>
-                <a href="#" style="font-size:14px;">stallion</a>
-                <a href="#" style="font-size:18px;">racing</a>
-                <a href="#" style="font-size:12px;">results</a>
-                <a href="#" style="font-size:10px;">horse</a>
-                <a href="#" style="font-size:12px;">betting</a>
-                <a href="#" style="font-size:16px;">mustang</a>
-                <a href="#" style="font-size:10px;">horses</a>
-                <a href="#" style="font-size:14px;">stallion</a> 
-                <a href="#" style="font-size:16px;">results</a>
-                <a href="#" style="font-size:14px;">winner</a>
-                <a href="#" style="font-size:10px;">horse</a>
-                <a href="#" style="font-size:14px;">betting</a>
+            <div id="blog_tags" style="float:left; margin-top:50px;">
+			
+		
+			<span>{$myoutput7}</span>
+				
             </div><!--end div#blog_tags-->
             
 			<a id="sidebar_site_link_1" href="#" style="float:left;"></a>

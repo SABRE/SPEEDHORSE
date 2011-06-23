@@ -141,9 +141,14 @@ $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS n
 			} //end of switch
 		}//end of inner foreach	
 						$startbody.='<a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a>';
+						//$startbody55.='http://sandbox.speedhorse.com/'.$path;
+						
 }
 $myoutput=$startbody;
 $tpl->setVariable( 'myoutput', $myoutput);
+//$myoutput55=$startbody55;
+//print $startbody55;
+//$tpl->setVariable( 'myoutput55', $myoutput55);
 	
 		
 ///////////////////////////////////////////////////Blog Category Name//////////////////////////////////////////////////////////////////////////////////////////////////
@@ -173,10 +178,11 @@ $data1=$db->arrayQuery("SELECT data_text5 FROM `ezcontentclass_attribute` WHERE 
 $chk=0;
 $chk1=0;
 $chk2=0;
-$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner,ezcontentobject.published as publish, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by published desc ");
+$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner,ezcontentobject.published as publish, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by published desc  ");
 		
 		foreach($data2 as $row)
 		{
+			
 				if($row['keyid']==$optionArray[0]['id'] && $chk<2)
 					{
 							//////Owner////////////////////////////
@@ -632,9 +638,9 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					$star33="";
 				}
 			
-				
+					
 }
-
+//print_r($tagarr);
 $myoutput2=$startbody2;
 $tpl->setVariable( 'myoutput2', $myoutput2);
 
@@ -727,6 +733,39 @@ $data6=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 
 $myoutput6=$startbody6;
 $tpl->setVariable( 'myoutput6', $myoutput6);
+
+//$tag="";
+$data7=$db->arrayQuery("SELECT ezcontentobject.id AS id, ezcontentobject_attribute.data_text, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_attribute, ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_attribute.contentobject_id and ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' group by id");
+		//$startbody1.='<ul class="speedhorse_list">';
+		foreach($data7 as $row)
+		{
+			
+			$path=str_replace('_','-',$row['path']);
+			//print $path;
+			$co = eZContentObject::fetch($row['id']);
+			$datamap =  $co->contentObjectAttributes('data_map');
+			//print_r($datamap);
+			foreach( $datamap as $key => $value ) //looping through each field
+			{
+			
+				$type = $value->dataType(); //looking at what type the current field is
+    			switch( $type->DataTypeString ) //base the switch on the type name
+    			{
+				case 'ezkeyword': 
+				if($key=='6'){
+						$tag=$value->toString();
+				}
+				break;
+				default: 
+			} //end of switch
+		}//end of inner foreach	
+						$startbody7.="<a href='http://localhost/ez45/index.php/ezwebin_site/".$path."' style='font-size:".mt_rand(10, 18)."px;' >".$tag."</a>&nbsp;&nbsp;";
+}
+
+$myoutput7=$startbody7;
+$tpl->setVariable( 'myoutput7', $myoutput7);
+
+
 
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:spblogs/spblogs.tpl' );
