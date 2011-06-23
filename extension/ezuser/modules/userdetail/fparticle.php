@@ -37,7 +37,8 @@ $startbody11='';
 $myoutput11='';			
 $startbody12='';
 $myoutput12='';			
-
+$startbody13='';
+$myoutput13='';		
 
 $chk1=1;	
 $data=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject_tree.path_identification_string AS path FROM `ezcontentobject` , ezcontentobject_tree WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND  ezcontentobject.contentclass_id ='127' and ezcontentobject.status='1' order by published desc limit 0,8");
@@ -682,7 +683,7 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 	{
 	$body=substr($body1,0,500);
 	$startbody9.='<div class="post">
-								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/noimages.jpg" alt="post_thumbnail"  width="33px" height="33px" />
+								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="post_thumbnail"  width="33px" height="33px" />
 								<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
 								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>
 								<div class="post_excerpt">
