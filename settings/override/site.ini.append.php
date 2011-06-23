@@ -44,7 +44,7 @@ MetaDataArray[author]=eZ Systems
 MetaDataArray[copyright]=eZ Systems
 MetaDataArray[description]=Content Management System
 MetaDataArray[keywords]=cms, publish, e-commerce, content management, development framework
-SiteURL=sandbox.speedhorse.com
+SiteURL=www.sp7.us
 
 [UserSettings]
 LogoutRedirect=/
