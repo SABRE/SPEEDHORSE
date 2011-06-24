@@ -181,38 +181,47 @@ window.onload = initSlideShow;
 					{$myoutput13}
 
 					<div style="width:620px;float:left;">
-						<div class="post">
-							<img class="post_thumbnail" src="images/blog_author.jpg" alt="post_thumbnail">
-							<h3><a href="#">blog name will go here</a></h3>
-							<h5><a href="#">-Author Name</a></h5>
-							<div class="post_excerpt">
-								<h6><a href="#">regular headline will go here</a></h6>
-								Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-								Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-								inceptos himenaeos.
-							</div>
-							<div class="more_link_wrap"><a href="#" class="more_link">read more &#xBB;</a></div>
-							<div class="post_meta">
-								<h6 class="post_date"><a href="#">posted on: friday, april 1, 2011</a></h6>
-								<h4><a href="#">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">rating</a> &#x2605;&#x2605;&#x2605;&#x2605;<span class="unattained_star">&#x2605;</span></h4>
-							</div>
-						</div>
-						<div class="post">
-							<img class="post_thumbnail" src="images/blog_author.jpg" alt="post_thumbnail">
-							<h3><a href="#">blog name will go here</a></h3>
-							<h5><a href="#">-Author Name</a></h5>
-							<div class="post_excerpt">
-								<img class="post_content_image" src="images/post_content_image.png" alt="post_content_image">
-								<h6><a href="#">regular headline will go here</a></h6>
-								Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-								Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-							</div>
-							<div class="more_link_wrap"><a href="#" class="more_link">read more &#xBB;</a></div>
-							<div class="post_meta">
-								<h6 class="post_date"><a href="#">posted on: friday, april 1, 2011</a></h6>
-								<h4><a href="#">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">rating</a> &#x2605;&#x2605;&#x2605;&#x2605;<span class="unattained_star">&#x2605;</span></h4>
-							</div>
-						</div>
+						<div id="blogs_preview_wrap"> 
+				<div id="blogs_preview"> 
+					<h2 class="section_title">from the speedhorse blogs</h2> 
+					<a id="blogs_preview_ad_link" href="http://www.xpressbet.com" target="_blank"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored.png" width="65px" height="28px"><img src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/sponsored/blog-sponsored/xpressbet/9492-3-eng-US/XpressBet.png" alt="post_thumbnail" width="104px" height="28px"/></a> 
+ 
+					<div style="width:620px;float:left;"> 
+						<div class="post" style="width:280px;"> 
+								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/users/contributor/contributor-blog/rajni-yahoo/8840-2-eng-US/Rajni-Yahoo.jpg" alt="post_thumbnail"  width="33px" height="33px"/> 
+								<h3><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">test.. for hot news</a></h3> 
+								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/823">Rajni Yahoo</a></h5> 
+								<div class="post_excerpt"> 
+									<img class="post_content_image" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/blog/blog-b/test-for-hot-news/10033-1-eng-US/test-for-hot-news.jpg" alt="post_content_image" style="width:87px;height=100px;"/> 
+									<h6><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">Hot article</a></h6> 
+									<?xml version="1.0" encoding="utf-8"?> 
+<section xmlns:image="http://ez.no/namespaces/ezpublish3/image/" xmlns:xhtml="http://ez.no/namespaces/ezpublish3/xhtml/" xmlns:custom="http://ez.no/namespaces/ezpublish3/custom/"><paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">Test to check where it lands</paragrap
+								</div> 
+								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news" class="more_link">read more &#xBB;</a></div> 
+								<div class="post_meta"> 
+									<h6 class="post_date">posted on: Thu, June 23, 2011</h6> 
+									<h4><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">rating</a> <span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span></h4> 
+								</div> 
+							</div><div class="post" style="width:280px;"> 
+								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/users/contributor/contributor-blog/rajni-yahoo/8840-2-eng-US/Rajni-Yahoo.jpg" alt="post_thumbnail"  width="33px" height="33px"/> 
+								<h3><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">Category D Music</a></h3> 
+								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/823">Rajni Yahoo</a></h5> 
+								<div class="post_excerpt"> 
+									<img class="post_content_image" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/blog/category-d/category-d-music/10022-1-eng-US/Category-D-Music.jpg" alt="post_content_image" style="width:87px;height=100px;"/> 
+									<h6><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">MUSIC </a></h6> 
+									<?xml version="1.0" encoding="utf-8"?> 
+<section xmlns:image="http://ez.no/namespaces/ezpublish3/image/" xmlns:xhtml="http://ez.no/namespaces/ezpublish3/xhtml/" xmlns:custom="http://ez.no/namespaces/ezpublish3/custom/"><paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">This Category Test...Music</paragraph> 
+								</div> 
+								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music" class="more_link">read more &#xBB;</a></div> 
+								<div class="post_meta"> 
+									<h6 class="post_date">posted on: Thu, June 23, 2011</h6> 
+									<h4><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">rating</a> <span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span></h4> 
+								</div> 
+							</div> 
+					</div><!--div--> 
+ 
+				</div><!-- #blogs_preview --> 
+			</div><!-- #blogs_preview_wrap -->
 					</div><!--div-->
 
 				</div><!-- #blogs_preview -->
