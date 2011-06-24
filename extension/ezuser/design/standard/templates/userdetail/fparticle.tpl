@@ -163,7 +163,7 @@ window.onload = initSlideShow;
 		
 		<div id="features">
 				<h2 class="section_title">featured stories</h2>
-				{* $myoutput12 *}
+				{$myoutput12}
 				<div id="features_content">
 					<table id="features_table">
 						<colgroup>
@@ -181,7 +181,7 @@ window.onload = initSlideShow;
 					{* $myoutput13 *}
 
 					<div>
-						{$myoutput9}
+						{* $myoutput9 *}
 					</div><!--div-->
 
 				</div><!-- #blogs_preview -->
