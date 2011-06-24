@@ -181,7 +181,38 @@ window.onload = initSlideShow;
 					{$myoutput13}
 
 					<div style="width:620px;float:left;">
-						{$myoutput9}
+						<div class="post">
+							<img class="post_thumbnail" src="images/blog_author.jpg" alt="post_thumbnail">
+							<h3><a href="#">blog name will go here</a></h3>
+							<h5><a href="#">-Author Name</a></h5>
+							<div class="post_excerpt">
+								<h6><a href="#">regular headline will go here</a></h6>
+								Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+								Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+								inceptos himenaeos.
+							</div>
+							<div class="more_link_wrap"><a href="#" class="more_link">read more &#xBB;</a></div>
+							<div class="post_meta">
+								<h6 class="post_date"><a href="#">posted on: friday, april 1, 2011</a></h6>
+								<h4><a href="#">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">rating</a> &#x2605;&#x2605;&#x2605;&#x2605;<span class="unattained_star">&#x2605;</span></h4>
+							</div>
+						</div>
+						<div class="post">
+							<img class="post_thumbnail" src="images/blog_author.jpg" alt="post_thumbnail">
+							<h3><a href="#">blog name will go here</a></h3>
+							<h5><a href="#">-Author Name</a></h5>
+							<div class="post_excerpt">
+								<img class="post_content_image" src="images/post_content_image.png" alt="post_content_image">
+								<h6><a href="#">regular headline will go here</a></h6>
+								Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+								Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+							</div>
+							<div class="more_link_wrap"><a href="#" class="more_link">read more &#xBB;</a></div>
+							<div class="post_meta">
+								<h6 class="post_date"><a href="#">posted on: friday, april 1, 2011</a></h6>
+								<h4><a href="#">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">rating</a> &#x2605;&#x2605;&#x2605;&#x2605;<span class="unattained_star">&#x2605;</span></h4>
+							</div>
+						</div>
 					</div><!--div-->
 
 				</div><!-- #blogs_preview -->
