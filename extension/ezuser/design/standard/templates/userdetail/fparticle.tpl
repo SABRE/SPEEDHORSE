@@ -181,7 +181,7 @@ window.onload = initSlideShow;
 					{$myoutput13}
 
 					<div>
-						{* $myoutput9 *}
+						{$myoutput9}
 					</div><!--div-->
 
 				</div><!-- #blogs_preview -->
