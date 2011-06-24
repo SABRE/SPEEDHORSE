@@ -17,10 +17,10 @@
 			{foreach $top_menu_items as $key => $item}
 				{if $current_node_id|eq(0)}
 					{set $current_node_id=$item.node_id}
-					{$current_node_id}jkgkj
+					
 				{/if}
 			{/foreach}
-			{$current_node_id}kkkkk
+			
 		
 		 
 		 
