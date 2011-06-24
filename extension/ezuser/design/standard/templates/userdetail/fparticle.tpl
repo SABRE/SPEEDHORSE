@@ -181,37 +181,7 @@ window.onload = initSlideShow;
 					{$myoutput13}
 
 					<div style="width:620px;float:left;">
-						<div class="post"> 
-								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/users/contributor/contributor-blog/rajni-yahoo/8840-2-eng-US/Rajni-Yahoo.jpg" alt="post_thumbnail"  width="33px" height="33px"/> 
-								<h3><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">test.. for hot news</a></h3> 
-								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/823">Rajni Yahoo</a></h5> 
-								<div class="post_excerpt"> 
-									<img class="post_content_image" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/blog/blog-b/test-for-hot-news/10033-1-eng-US/test-for-hot-news.jpg" alt="post_content_image" style="width:87px;height=100px;"/> 
-									<h6><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">Hot article</a></h6> 
-									<?xml version="1.0" encoding="utf-8"?> 
-<section xmlns:image="http://ez.no/namespaces/ezpublish3/image/" xmlns:xhtml="http://ez.no/namespaces/ezpublish3/xhtml/" xmlns:custom="http://ez.no/namespaces/ezpublish3/custom/"><paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">Test to check where it lands</paragrap
-								></div> 
-								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news" class="more_link">read more &#xBB;</a></div> 
-								<div class="post_meta"> 
-									<h6 class="post_date">posted on: Thu, June 23, 2011</h6> 
-									<h4><a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/blog-b/test-for-hot-news">rating</a> <span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span></h4> 
-								</div> 
-							</div><div class="post"> 
-								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/users/contributor/contributor-blog/rajni-yahoo/8840-2-eng-US/Rajni-Yahoo.jpg" alt="post_thumbnail"  width="33px" height="33px"/> 
-								<h3><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">Category D Music</a></h3> 
-								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/823">Rajni Yahoo</a></h5> 
-								<div class="post_excerpt"> 
-									<img class="post_content_image" src="http://sandbox.speedhorse.com/var/ezwebin_site/storage/images/blog/category-d/category-d-music/10022-1-eng-US/Category-D-Music.jpg" alt="post_content_image" style="width:87px;height=100px;"/> 
-									<h6><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">MUSIC </a></h6> 
-									<?xml version="1.0" encoding="utf-8"?> 
-<section xmlns:image="http://ez.no/namespaces/ezpublish3/image/" xmlns:xhtml="http://ez.no/namespaces/ezpublish3/xhtml/" xmlns:custom="http://ez.no/namespaces/ezpublish3/custom/"><paragraph xmlns:tmp="http://ez.no/namespaces/ezpublish3/temporary/">This Category Test...Music</paragraph> 
-								</div> 
-								<div class="more_link_wrap"><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music" class="more_link">read more &#xBB;</a></div> 
-								<div class="post_meta"> 
-									<h6 class="post_date">posted on: Thu, June 23, 2011</h6> 
-									<h4><a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">21 comments</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">219 views</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://sandbox.speedhorse.com/blog/category-d/category-d-music">rating</a> <span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span><span class="unattained_star">&#x2605;</span></h4> 
-								</div> 
-							</div> 
+						{$myoutput9}
 					</div><!--div-->
 
 				</div><!-- #blogs_preview -->
