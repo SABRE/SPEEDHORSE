@@ -949,6 +949,7 @@ a {
 	width: 305px;
 	float:left;
 }
+.right_bottom_panel { float:right!important;margin:0 10px 0 0; }
 #left_bottom_panel .section_title {
 	margin-top: 0;
 }
