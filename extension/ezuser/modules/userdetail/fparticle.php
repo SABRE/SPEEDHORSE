@@ -661,7 +661,7 @@ $data9=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 	if($imagePath!="")
 	{
 	$body=substr($body1,0,325);
-	$startbody9.='<div class="post">
+	$startbody9.='<div class="post" style="width:280px;">
 								<img class="post_thumbnail" src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="post_thumbnail"  width="33px" height="33px"/>
 								<h3><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h3>
 								<h5><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['ownerid'].'">'.ucfirst($author[0]).'</a></h5>

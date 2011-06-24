@@ -178,7 +178,7 @@ window.onload = initSlideShow;
 		<div id="blogs_preview_wrap">
 				<div id="blogs_preview">
 					<h2 class="section_title">from the speedhorse blogs</h2>
-					{* $myoutput13 *}
+					{$myoutput13}
 
 					<div style="width:620px;float:left;">
 						{$myoutput9}
