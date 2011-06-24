@@ -173,10 +173,11 @@ window.onload = initSlideShow;
 				{$myoutput}
 					</table><!-- #features_table -->
 				</div><!-- #features_content -->
-		</div><!-- #features -->
+		</div><!-- #features section -->
 				
 		<div id="blogs_preview_wrap">
-				<div id="blogs_preview">
+				<div id="blogs_preview"> 
+				
 					<h2 class="section_title">from the speedhorse blogs</h2>
 					{$myoutput13}
 
