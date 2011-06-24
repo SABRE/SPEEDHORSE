@@ -15,7 +15,7 @@ EmailReceiver=
 
 [SiteSettings]
 SiteName=Speed Horse (Sandbox)
-SiteURL=sandbox.speedhorse.com
+SiteURL=www.sp7.us
 DefaultPage=content/dashboard
 LoginPage=custom
 
