@@ -224,9 +224,9 @@ $data1=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
                 <div id="the_post_content">
                 	<h3>'.$headline.'<span>'.$publishdate.'</span></h3>
                     
-                	<img src="http://localhost/ez45/'.$imagePathuser.'" alt="Post Author" class="float_img_right" width="204px" height="194px"><!-- In case you have an image in your post that needs to be on the left and content flows around it use float_img_left for the class -->
+                	<img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="float_img_right" width="204px" height="194px"><!-- In case you have an image in your post that needs to be on the left and content flows around it use float_img_left for the class -->
                 	'.$body.'
-                    <img src="http://localhost/ez45/'.$imagePath.'" class="post_img" />
+                    <img src="http://sandbox.speedhorse.com/'.$imagePath.'" class="post_img" />
                    
                 </div><!--end div#the_post_content-->';
 }
@@ -455,7 +455,7 @@ $data7=$db->arrayQuery("SELECT ezcontentobject.id AS id, ezcontentobject_attribu
 				default: 
 			} //end of switch
 		}//end of inner foreach	
-						$startbody7.="<a href='http://localhost/ez45/index.php/ezwebin_site/".$path."' style='font-size:".mt_rand(10, 18)."px;' >".$tag."</a>&nbsp;&nbsp;";
+						$startbody7.="<a href='http://sandbox.speedhorse.com/".$path."' style='font-size:".mt_rand(10, 18)."px;' >".$tag."</a>&nbsp;&nbsp;";
 }
 
 $myoutput7=$startbody7;
