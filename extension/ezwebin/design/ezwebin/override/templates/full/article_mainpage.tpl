@@ -50,8 +50,18 @@
                 {attribute_view_gui attribute=$node.data_map.body}
             </div>
         {/if}
+		
+		{if $node.data_map.qr_images.content.is_empty|not}
+            <div class="attribute-long">
+                {attribute_view_gui attribute=$node.data_map.qr_images}
+            </div>
+        {/if}
 
         {include uri='design:parts/article/page_navigator.tpl' used_node=$node subpage=false()}
+
+		<div class="attribute-star-rating">
+            {attribute_view_gui attribute=$node.data_map.star_rating}
+        </div>
 
         {include uri='design:parts/article/comments.tpl' used_node=$node}
 
