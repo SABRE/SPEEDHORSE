@@ -178,7 +178,7 @@ $data1=$db->arrayQuery("SELECT data_text5 FROM `ezcontentclass_attribute` WHERE 
 $chk=0;
 $chk1=0;
 $chk2=0;
-$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner,ezcontentobject.published as publish, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by published desc  ");
+$data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name, ezcontentobject.owner_id as owner,ezcontentobject.published as publish, ezcontentobject_tree.path_identification_string AS path, ezcontentobject_attribute.data_text as keyid FROM `ezcontentobject` , ezcontentobject_tree, ezcontentobject_attribute  WHERE ezcontentobject.id = ezcontentobject_tree.contentobject_id AND ezcontentobject.id = ezcontentobject_attribute.contentobject_id and  ezcontentobject.contentclass_id ='20' and ezcontentobject.status='1' order by publish desc");
 		
 		foreach($data2 as $row)
 		{
@@ -295,11 +295,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							$startbody2.='<div class="post" style="margin-right:20px; height:180px;">
 							<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+									<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 									<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+									<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+									<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'</a></p>
+									<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 								</div>
 								<div class="post_foot">
 									<span class="posted">Posted on: '.$publishdate.'</span><br />
@@ -318,11 +318,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 							$startbody2.='<div class="post" style="height:180px;">
 								<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author" width="87px" height="100px"/></a>
 								<div class="post_right">
-									<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+									<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 									<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-									<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-									<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'</a></p>
-									<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+									<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+									<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'</a></p>
+									<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 								</div><!--end div.post_right-->
 								<div class="post_foot">
 									<span class="posted">Posted on: '.$publishdate.'</span><br />
@@ -449,11 +449,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$startbody3.='<div class="post" style="margin-right:20px;height:180px;">
 									<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+											<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 											<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+											<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+											<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'...</a></p>
+											<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 										</div>
 										<div class="post_foot">
 											<span class="posted">Posted on: '.$publishdate.'</span>
@@ -468,11 +468,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 									$startbody3.='<div class="post"  style="height:180px;">
 										<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 										<div class="post_right">
-											<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+											<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 											<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-											<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-											<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
-											<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+											<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+											<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'...</a></p>
+											<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 										</div><!--end div.post_right-->
 										<div class="post_foot">
 											<span class="posted">Posted on: '.$publishdate.'</span>
@@ -600,11 +600,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					$startbody4.='<div class="post" style="margin-right:20px;height:180px;">
 					<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+							<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 							<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+							<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+							<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'...</a></p>
+							<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 						</div>
 						<div class="post_foot">
 							<span class="posted">Posted on: '.$publishdate.'</span>
@@ -619,11 +619,11 @@ $data2=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS 
 					$startbody4.='<div class="post"  style="height:180px;">
 						<a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'"><img src="http://sandbox.speedhorse.com/'.$imagePathuser.'" alt="Post Author" class="author"  width="87px" height="100px"/></a>
 						<div class="post_right">
-							<h4><a href="http://sandbox.speedhorse.com/'.$path.'">'.$title.'</a></h4>
+							<h4><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$title.'</a></h4>
 							<cite><a href="http://sandbox.speedhorse.com/userdetail/list/'.$row['owner'].'">'.ucfirst($author[0]).'</a></cite>
-							<h5><a href="http://sandbox.speedhorse.com/'.$path.'">'.$headline.'</a></h5>
-							<p><a href="http://sandbox.speedhorse.com/'.$path.'">'.$summary.'...</a></p>
-							<em><a href="http://sandbox.speedhorse.com/'.$path.'">Read More &raquo;</a></em>
+							<h5><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$headline.'</a></h5>
+							<p><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">'.$summary.'...</a></p>
+							<em><a href="http://sandbox.speedhorse.com/spblogs/bshowdetail/'.$row['id'].'">Read More &raquo;</a></em>
 						</div><!--end div.post_right-->
 						<div class="post_foot">
 							<span class="posted">Posted on: '.$publishdate.'</span>

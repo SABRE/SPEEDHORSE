@@ -11,6 +11,8 @@ $db = eZDB::instance();
 $tpl = templateInit();
 $viewarr= array();
 
+$blogid = $Params['ParamOne'];
+
 $startbody='';
 $myoutput='';			
 $startbody1='';
@@ -99,7 +101,7 @@ $tpl->setVariable( 'myoutput', $myoutput);
 		
 ///////////////////////////////////////////////Blog Containt Start///////////////////////////////////////////////////////////
 $tag="";
-$data1=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name,ezcontentobject.owner_id as ownerid, ezcontentobject.published as publish, ezcontentobject_attribute.data_text FROM `ezcontentobject` , ezcontentobject_attribute WHERE ezcontentobject.id = ezcontentobject_attribute.contentobject_id AND  ezcontentobject.id ='893' and ezcontentobject.status='1' limit 0,1");
+$data1=$db->arrayQuery("SELECT ezcontentobject.id AS id,ezcontentobject.name AS name,ezcontentobject.owner_id as ownerid, ezcontentobject.published as publish, ezcontentobject_attribute.data_text FROM `ezcontentobject` , ezcontentobject_attribute WHERE ezcontentobject.id = ezcontentobject_attribute.contentobject_id AND  ezcontentobject.id =".$blogid." and ezcontentobject.status='1' limit 0,1");
 		//$startbody1.='<ul class="speedhorse_list">';
 		foreach($data1 as $row)
 		{
