@@ -1,8 +1,0 @@
-[29-May-2011 07:30:11] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
- in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
-[29-May-2011 07:31:42] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
- in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
-[29-May-2011 08:22:50] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
- in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
-[29-May-2011 08:24:22] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
- in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
