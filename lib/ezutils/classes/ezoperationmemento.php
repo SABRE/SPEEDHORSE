@@ -1,0 +1,195 @@
+<?php
+//
+// Definition of eZOperationMemento class
+//
+// Created on: <06-���-2002 16:19:18 sp>
+//
+// ## BEGIN COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
+// SOFTWARE NAME: eZ Publish
+// SOFTWARE RELEASE: 4.5.0
+// COPYRIGHT NOTICE: Copyright (C) 1999-2011 eZ Systems AS
+// SOFTWARE LICENSE: eZ Proprietary Use License v1.0
+// NOTICE: >
+//   This source file is part of the eZ Publish (tm) CMS and is
+//   licensed under the terms and conditions of the eZ Proprietary
+//   Use License v1.0 (eZPUL).
+// 
+//   A copy of the eZPUL was included with the software. If the
+//   license is missing, request a copy of the license via email
+//   at eZPUL-v1.0@ez.no or via postal mail at
+//     Attn: Licensing Dept. eZ Systems AS, Klostergata 30, N-3732 Skien, Norway
+// 
+//   IMPORTANT: THE SOFTWARE IS LICENSED, NOT SOLD. ADDITIONALLY, THE
+//   SOFTWARE IS LICENSED "AS IS," WITHOUT ANY WARRANTIES WHATSOEVER.
+//   READ THE eZPUL BEFORE USING, INSTALLING OR MODIFYING THE SOFTWARE.
+// ## END COPYRIGHT, LICENSE AND WARRANTY NOTICE ##
+//
+
+/*! \file
+*/
+
+/*!
+  \class eZOperationMemento ezoperationmemento.php
+  \brief The class eZOperationMemento does
+
+*/
+
+class eZOperationMemento extends eZPersistentObject
+{
+    /*!
+     Constructor
+    */
+    function eZOperationMemento( $row )
+    {
+        $this->eZPersistentObject( $row );
+    }
+
+    static function definition()
+    {
+        return array( 'fields' => array( 'id' => array( 'name' => 'ID',
+                                                        'datatype' => 'integer',
+                                                        'default' => 0,
+                                                        'required' => true ),
+                                         'main' => array( 'name' => 'Main',
+                                                          'datatype' => 'integer',
+                                                          'default' => 0,
+                                                          'required' => true ),
+                                         'memento_key' => array( 'name' => 'MementoKey',
+                                                                 'datatype' => 'string',
+                                                                 'default' => '',
+                                                                 'required' => true ),
+                                         'main_key' => array( 'name' => 'MainKey',
+                                                              'datatype' => 'string',
+                                                              'default' => '',
+                                                              'required' => true,
+                                                              'foreign_class' => 'eZOperationMemento',
+                                                              'foreign_attribute' => 'memento_key',
+                                                              'multiplicity' => '1..*' ),
+                                         'memento_data' => array( 'name' => 'MementoData',
+                                                                  'datatype' => 'text',
+                                                                  'default' => '',
+                                                                  'required' => true ) ),
+                      'function_attributes' => array( 'main_memento' => 'mainMemento' ),
+                      'keys' => array( 'id' ),
+                      "increment_key" => "id",
+                      'class_name' => 'eZOperationMemento',
+                      'name' => 'ezoperation_memento' );
+    }
+
+    function &mainMemento()
+    {
+        if ( !isset( $this->MainMemento ) )
+        {
+            $this->MainMemento = eZOperationMemento::fetchMain( $this->attribute( 'main_key' ) );
+        }
+        return $this->MainMemento;
+    }
+
+    static function fetch( $mementoKey, $asObject = true )
+    {
+        if ( is_array( $mementoKey ) )
+        {
+            $mementoKey = eZOperationMemento::createKey( $mementoKey );
+        }
+
+        return eZPersistentObject::fetchObject( eZOperationMemento::definition(),
+                                                null,
+                                                array( 'memento_key' => $mementoKey ),
+                                                $asObject );
+    }
+
+    static function fetchChild( $mementoKey, $asObject = true )
+    {
+        if ( is_array( $mementoKey ) )
+        {
+            $mementoKey = eZOperationMemento::createKey( $mementoKey );
+        }
+
+        return eZPersistentObject::fetchObject( eZOperationMemento::definition(),
+                                                null,
+                                                array( 'memento_key' => $mementoKey,
+                                                       'main' => 0 ),
+                                                $asObject );
+    }
+
+    static function fetchMain( $mementoKey, $asObject = true )
+    {
+        if ( is_array( $mementoKey ) )
+        {
+            $mementoKey = eZOperationMemento::createKey( $mementoKey );
+        }
+
+        return eZPersistentObject::fetchObject( eZOperationMemento::definition(),
+                                                null,
+                                                array( 'memento_key' => $mementoKey,
+                                                       'main' => 1 ),
+                                                $asObject );
+    }
+
+    static function fetchList( $mementoKey, $asObject = true )
+    {
+        if ( is_array( $mementoKey ) )
+        {
+            $mementoKey = eZOperationMemento::createKey( $mementoKey );
+        }
+
+        return eZPersistentObject::fetchObjectList( eZOperationMemento::definition(),
+                                                    null,
+                                                    array( 'memento_key' => $mementoKey,
+                                                           'main' => 0 ),
+                                                    null,
+                                                    null,
+                                                    $asObject );
+    }
+
+    function setData( $data = array() )
+    {
+        $this->MementoData = serialize( $data );
+    }
+
+    function data()
+    {
+        return unserialize( $this->MementoData );
+    }
+
+    static function create( $mementoKey, $data = array(), $isMainKey = false, $mainKey = null )
+    {
+        if( is_array( $mementoKey ) )
+        {
+            $mementoKey = eZOperationMemento::createKey( $mementoKey );
+        }
+
+        $serializedData = serialize( $data );
+        return new eZOperationMemento( array( 'id' => null,
+                                              'main' => ( $isMainKey ? 1 : 0 ),
+                                              'memento_key' => $mementoKey,
+                                              'main_key' => ( $isMainKey ? $mementoKey : $mainKey ),
+                                              'memento_data' => $serializedData ) );
+    }
+
+    static function createKey( $parameters )
+    {
+        $string = '';
+        foreach ( $parameters as $key => $value )
+        {
+            if ( is_array( $value ) )
+                $string .= $key . serialize( $value );
+            else
+                $string .= $key . $value;
+        }
+        return md5( $string );
+    }
+
+    /*!
+     \static
+     Removes all active operation mementos.
+    */
+    static function cleanup()
+    {
+        $db = eZDB::instance();
+        $db->query( "DELETE FROM ezoperation_memento" );
+    }
+
+}
+
+?>
