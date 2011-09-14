@@ -1,0 +1,75 @@
+[29-May-2011 07:30:11] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[29-May-2011 07:31:42] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[29-May-2011 08:22:50] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[29-May-2011 08:24:22] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/shsand/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 03:04:07] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 11:59:23] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/{$vid_id}-{$player}.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 12:01:25] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 12:06:07] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 12:10:53] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 12:15:50] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 13:52:57] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 13:54:02] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 14:03:03] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 14:03:08] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[27-Aug-2011 14:06:10] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:33:05] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:33:22] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:36:50] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:38:29] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:39:14] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 04:59:02] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[06-Sep-2011 05:13:09] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[12-Sep-2011 11:18:07] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/nMNbtlDF-waBjv6Er.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No buffer space available in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 04:46:38] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 04:50:06] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:29:18] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:29:45] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:29:51] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:55:30] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:55:45] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:57:18] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:58:35] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:58:37] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:58:44] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:59:26] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:59:30] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[13-Sep-2011 05:59:35] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/-.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[14-Sep-2011 06:44:44] PHP Warning:  file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7
+[14-Sep-2011 06:44:45] PHP Warning:  file_get_contents(http://cdn.thinkcreative.com/players/jcIRmqqZ-HaHpsnKM.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/cadmin/public_html/extension/multimedia/design/standard/javascript/bits_modified.php on line 7

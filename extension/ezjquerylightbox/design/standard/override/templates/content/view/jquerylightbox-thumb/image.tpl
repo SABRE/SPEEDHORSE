@@ -1,0 +1,3 @@
+{def $image_size=ezini( 'jQueryLightboxSettings' , 'ImageSize' , 'jquerylightbox.ini' )}
+<a href={$object.data_map.image.content[$image_size].full_path|ezroot( 'double' , 'full' )} rel="lightbox" title="{if $object.data_map.caption.has_content}{$object.data_map.caption.content.output.output_text|strip_tags|trim}{else}{$object.name|wash}{/if}"><div class="border-jquerylightbox" style="width: {$object.data_map.image.content[$object_parameters.size].width|sum(4)}px; height: {$object.data_map.image.content[$object_parameters.size].height|sum(4)}px;">{attribute_view_gui attribute=$object.data_map.image image_class=$object_parameters.size}</div></a>
+{undef $image_size}

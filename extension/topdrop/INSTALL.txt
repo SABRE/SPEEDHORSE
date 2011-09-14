@@ -1,0 +1,79 @@
+Topdrop Extension INSTALL
+
+Introduction
+============
+
+What is the Topdrop extension?
+------------------------------------------------
+
+Dropdown extension menu for ezPublish
+
+A dynamic menu, which show the childs when you pass over an element of the menu.
+CSS Dropdown Top menu is based on the original works of;
+- http://ez.no/community/contribs/template_plugins/suckerfish_dropdown_menu by Heliopsis
+- http://www.cssplay.co.uk/menus/drop_examples.html CSS menu by Stu Nicholls
+It is fully CSS based (no Javascript) and tested under all major browsers (IE 5, 6, 7 - Firefox - Opera) on Windows and Linux.
+
+Getting eZ publish
+==================
+
+You can download a version of eZ publish from ez.no, you will find the
+various versions at:
+http://ez.no/ez_publish/download/all_releases/ez_publish_3_stable_releases
+
+Information on the installation of eZ publish can be found at:
+http://ez.no/ez_publish/documentation/installation
+
+
+Installing Topdrop extension
+==============================================
+
+1. Copy the package into the `extension' directory in the root of your eZ publish installation.
+
+2. Unpack the files in the distribution. The command necessary depends on the file you 
+   downloaded.
+   [tar]:
+   $ tar -xvvf topdrop.tar
+
+3. We must now enable the extension in eZ publish. To do this edit site.ini.append(.php) in the 
+   folder root_of_ezpublish/settings. If this file does not exist; create it. Locate (or add)
+   the block [ExtensionSettings] and add the line:
+   ActiveExtensions[]=topdrop
+
+   If you run several sites using only one distribution and only some of the sites should use
+   the extension, make the changes in the override file of that siteaccess. 
+   E.g root_of_ezpublish/settings/siteaccess/<siteaccess_name>/site.ini.append(.php)
+   But instead of using ActiveExtensions you must add these lines instead:
+
+   [ExtensionSettings]
+   ActiveAccessExtensions[]=topdrop
+   
+   You can also activate the extension through the admin interface, in Setup/Extentions.
+   Just make the extension active by checking the checkbox, and validate with the Apply Changes button.
+   Caution : activate the extension through the admin interface will activate it for all siteaccess.
+
+4. Patching the pagelayout.tpl
+   In order to call the menu, you need to patch the pagelayout.tpl file
+   Replace  
+<div id="topmenu" class="float-break">
+   {include uri='design:menu/flat_top.tpl'}
+</div>
+   By 
+ <div class="float-break">
+     {menu name=TopMenu}
+ </div>
+
+5. Clear the cache....
+
+6. Tune your menu.
+   Each fetch has a filter like class_filter_array, array(1)
+   This will only display folders
+   In eZwebin, replace by class_filter_array, array(1,19,20,31) to get all needed classes.
+
+   This parameter can be configured level by level
+
+   Overflow direction
+   A multi level menu on the right of a webpage might go out of the screen. To prevent it, topdrop has a parameter that tell the sub menu if it should expand on the left or on the right
+   In settings/design.ini.append.php you will find a goleft setting
+   goleft=4 means that the first 4 menu will drop on the right, while the next will drop on the left.
+

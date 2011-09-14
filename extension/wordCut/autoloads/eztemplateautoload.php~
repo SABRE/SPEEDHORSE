@@ -1,0 +1,13 @@
+<?php
+
+// Operator autoloading
+
+$eZTemplateOperatorArray = array();
+
+$eZTemplateOperatorArray[] =
+	array( 'script' => 'extension/utf8entities/utf8entities_operator.php',
+	       'class' => 'UTF8EntitiesOperator',
+	       'operator_names' => array( 'convert_utf8_to_entities' ) );
+	       
+?>
+
