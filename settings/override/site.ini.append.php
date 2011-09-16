@@ -71,14 +71,14 @@ AvailableViewModes[]=embed-inline
 InlineViewModes[]=embed-inline
 
 [DebugSettings]
-Debug=inline
-DebugOutput=enabled
-DebugRedirection=disabled
+#Debug=inline
+#DebugOutput=enabled
+#DebugRedirection=disabled
 
 [TemplateSettings]
-ShowXHTMLCode=disabled
-ShowUsedTemplates=enabled
-TemplateCompile=disabled
-TemplateCache=disabled
-DevelopmentMode=enabled
+#ShowXHTMLCode=disabled
+#ShowUsedTemplates=enabled
+#TemplateCompile=disabled
+#TemplateCache=disabled
+#DevelopmentMode=enabled
 */ ?>

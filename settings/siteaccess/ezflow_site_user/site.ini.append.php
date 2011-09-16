@@ -57,6 +57,6 @@ VarDir=var/ezflow_site
 TranslationList=
 
 [MailSettings]
-AdminEmail=admin@collegeyardart.com
+AdminEmail=admin@sandbox.speedhorse.com
 EmailSender=
 */ ?>
