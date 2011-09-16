@@ -18,7 +18,7 @@ SessionNamePerSiteAccess=disabled
 
 [SiteSettings]
 SiteName=eZ Flow
-SiteURL=collegeyardart.com/index.php
+SiteURL=sandbox.speedhorse.com/
 LoginPage=embedded
 AdditionalLoginFormActionURL=http://admin.collegeyardart.com/index.php/user/login
 

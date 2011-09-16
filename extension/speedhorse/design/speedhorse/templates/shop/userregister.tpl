@@ -209,8 +209,8 @@ Input did not validate. All fields marked with * must be filled in.
 
  -->
 <div class="buttonblock">
-  <input type="image" name="CancelButton" src="http://collegeyardart.com/images/cancel.jpg">
-   <input type="image" name="StoreButton" src="http://collegeyardart.com/images/continue2.jpg">
+  <input type="image" name="CancelButton" src="http://sandbox.speedhorse.com/images/cancel.jpg">
+   <input type="image" name="StoreButton" src="http://sandbox.speedhorse.com/images/continue2.jpg">
 
 <!--    <input class="button" type="submit" name="CancelButton" value="{"Cancel"|i18n('design/ezwebin/shop/userregister')}" />
     <input class="defaultbutton" type="submit" name="StoreButton" value="{"Continue"|i18n( 'design/ezwebin/shop/userregister')}" />

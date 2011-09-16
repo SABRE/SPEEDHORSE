@@ -18,9 +18,9 @@ SessionNamePerSiteAccess=disabled
 
 [SiteSettings]
 SiteName=eZ Flow
-SiteURL=collegeyardart.com/index.php
+SiteURL=sandbox.speedhorse.com/
 LoginPage=embedded
-AdditionalLoginFormActionURL=http://admin.collegeyardart.com/index.php/user/login
+AdditionalLoginFormActionURL=http://admin.sandbox.speedhorse.com/index.php/user/login
 
 [UserSettings]
 RegistrationEmail=
@@ -57,6 +57,6 @@ VarDir=var/ezflow_site
 TranslationList=
 
 [MailSettings]
-AdminEmail=admin@collegeyardart.com
+AdminEmail=admin@sandbox.speedhorse.com
 EmailSender=
 */ ?>

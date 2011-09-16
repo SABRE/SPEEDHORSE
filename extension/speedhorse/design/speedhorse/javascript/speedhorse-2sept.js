@@ -87,8 +87,8 @@ jQuery(document).ready(function($) {
 	  $("#class_cats ul.main ul.sub-cats").hide();
 	 $("#class_cats li.active ul.sub-cats").show();
 	 $('a[rel*=facebox]').facebox({
-        loadingImage : 'http://collegeyardart.com/images/loading.gif',
-        closeImage   : 'http://collegeyardart.com/images/closelabel.png'
+        loadingImage : 'http://sandbox.speedhorse.com/images/loading.gif',
+        closeImage   : 'http://sandbox.speedhorse.com/images/closelabel.png'
       });
 	var theId = $(".newmagazine").attr('id');
 	if(theId!== undefined){
@@ -587,8 +587,8 @@ $(".subemagazineli").click(function(){
     settings: {
       opacity      : 0.2,
       overlay      : true,
-      loadingImage : 'http://collegeyardart.com/images/loading.gif',
-      closeImage   : 'http://collegeyardart.com/images/closelabel.png',
+      loadingImage : 'http://sandbox.speedhorse.com/images/loading.gif',
+      closeImage   : 'http://sandbox.speedhorse.com/images/closelabel.png',
       imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif' ],
       faceboxHtml  : '\
     <div id="facebox" style="display:none;"> \

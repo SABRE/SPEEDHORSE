@@ -84,8 +84,8 @@
     settings: {
       opacity      : 0.2,
       overlay      : true,
-      loadingImage : 'http://collegeyardart.com/images/loading.gif',
-      closeImage   : 'http://collegeyardart.com/images/closelabel.png',
+      loadingImage : 'http://sandbox.speedhorse.com/images/loading.gif',
+      closeImage   : 'http://sandbox.speedhorse.com/images/closelabel.png',
       imageTypes   : [ 'png', 'jpg', 'jpeg', 'gif' ],
       faceboxHtml  : '\
     <div id="facebox" style="display:none;"> \

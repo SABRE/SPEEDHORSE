@@ -13,7 +13,7 @@
                         <a href={concat( "/content/tipafriend/", $node.node_id )|ezurl} title="{'Tip a friend'|i18n( 'design/ezwebin/full/article' )}" class="email">Email</a>
                     </div><!--end div.left-area-->
                     <div class="social">
-                        <iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fcollegeyardart.com{$node.url_alias|ezurl(no)}&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
+                        <iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fsandbox.speedhorse.com{$node.url_alias|ezurl(no)}&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
                     </div><!--end div.social-->
                 </div><!--end div.info_bar-->
                 
@@ -71,7 +71,7 @@
                     <a href={concat( "/content/tipafriend/", $node.node_id )|ezurl} title="{'Tip a friend'|i18n( 'design/ezwebin/full/article' )}" class="email">Email</a>
                 </div><!--end div.left-area-->
                 <div class="social">
-                	<iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fcollegeyardart.com{$node.url_alias|ezurl(no)}&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
+                	<iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fsandbox.speedhorse.com{$node.url_alias|ezurl(no)}&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
                 </div><!--end div.social-->
             </div><!--end div.info_bar-->
             </div><!--end div#the_post-->
@@ -109,7 +109,7 @@
            </div><!--end div#content--> 
             <div id="comments" style="z-index:1; margin-top:auto; position:relative;">
             {def $facebookurl=""}
-			{set $facebookurl=concat('http://collegeyardart.com',$node.url_alias|ezurl(no))}
+			{set $facebookurl=concat('http://sandbox.speedhorse.com',$node.url_alias|ezurl(no))}
 			<h2>Comments (<fb:comments-count href="{$facebookurl}"/></fb:comments-count>) </h2>
 			{literal}
 			 <script>(function(d){

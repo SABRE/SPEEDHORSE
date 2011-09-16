@@ -8,7 +8,7 @@
   <tr>
     <td width="170"><strong>First name:</strong> </td>
     <td width="291">{$first_name}</td>
-    <td width="334" rowspan="5"><img src="http://collegeyardart.com/{$imagePath}" style="border:none;" width="100px" height="100px"/></td>
+    <td width="334" rowspan="5"><img src="http://sandbox.speedhorse.com/{$imagePath}" style="border:none;" width="100px" height="100px"/></td>
   </tr>
   <tr>
     <td><strong>Middle name:</strong> </td>
@@ -81,7 +81,7 @@
     <td colspan="3"><strong>Articles:</strong> &nbsp;&nbsp;
 	{if is_set($data_array)} 
 	{foreach $data_array as $index => $item}	
-	<a href="http://collegeyardart.com/index.php/{$item.path}">{$item.name}</a>{$con}
+	<a href="http://sandbox.speedhorse.com/index.php/{$item.path}">{$item.name}</a>{$con}
 	{/foreach}
 	{/if}
 
@@ -96,7 +96,7 @@
     <td height="67" colspan="3"><strong>Blogs:</strong> &nbsp;&nbsp;
 	{if is_set($data_array2)} 
 	{foreach $data_array2 as $index => $item}	
-	<a href="http://collegeyardart.com/index.php/{$item.path}">{$item.name}</a>{$con}
+	<a href="http://sandbox.speedhorse.com/index.php/{$item.path}">{$item.name}</a>{$con}
 	{/foreach}
 	{/if}
 
@@ -109,7 +109,7 @@
   </tr>
  
   <tr>
-    <td colspan="3"><strong>Comments:</strong>&nbsp;&nbsp;{if is_set($data_array1)} {foreach $data_array1 as $index => $item}<a href="http://collegeyardart.com/index.php/{$item.path}">{$item.name}</a>{$con}{/foreach}{/if} </td>
+    <td colspan="3"><strong>Comments:</strong>&nbsp;&nbsp;{if is_set($data_array1)} {foreach $data_array1 as $index => $item}<a href="http://sandbox.speedhorse.com/index.php/{$item.path}">{$item.name}</a>{$con}{/foreach}{/if} </td>
   </tr>
 
 <tr><td colspan="3"></td></tr>

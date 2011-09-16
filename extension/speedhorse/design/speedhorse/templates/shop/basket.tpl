@@ -90,8 +90,8 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td colspan="2"><div align="right"><span class="buttonblock">
-      <input type="image" name="StoreChangesButton" src="http://collegeyardart.com/images/update.jpg">
-      <input type="image" name="RemoveProductItemButton" src="http://collegeyardart.com/images/remove.jpg">
+      <input type="image" name="StoreChangesButton" src="http://sandbox.speedhorse.com/images/update.jpg">
+      <input type="image" name="RemoveProductItemButton" src="http://sandbox.speedhorse.com/images/remove.jpg">
     </span></div></td>
     </tr>
 <tr>
@@ -126,8 +126,8 @@
 
 <div class="buttonblock">
   <div align="right">
-  <input type="image" name="ContinueShoppingButton" src="http://collegeyardart.com/images/continue2.jpg">&nbsp;
-  <input type="image" name="CheckoutButton" src="http://collegeyardart.com/images/chekout.jpg">
+  <input type="image" name="ContinueShoppingButton" src="http://sandbox.speedhorse.com/images/continue2.jpg">&nbsp;
+  <input type="image" name="CheckoutButton" src="http://sandbox.speedhorse.com/images/chekout.jpg">
   </div>
 </div>
 

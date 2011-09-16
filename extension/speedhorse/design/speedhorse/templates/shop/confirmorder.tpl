@@ -64,7 +64,7 @@
       <td valign="top">&nbsp;</td>
       <td valign="top">&nbsp;</td>
       <td valign="top"><span class="buttonblock">
-        <input type="image" name="EditButton" src="http://collegeyardart.com/images/edit.jpg">
+        <input type="image" name="EditButton" src="http://sandbox.speedhorse.com/images/edit.jpg">
       </span></td>
     </tr>
   </tbody>
@@ -93,8 +93,8 @@
       <td>{$ProductItem:item.total_price_inc_vat|l10n( 'currency', $locale, $symbol )}</td>
       <td><div align="right"><span class="buttonblock">
 	  	<!--<input type="checkbox" name="RemoveProductItemDeleteList[]" value="{$ProductItem:item.id}" /> -->
-        <input type="image" name="CancelButton" src="http://collegeyardart.com/images/update.jpg">
-        <input type="image" name="CancelButton" src="http://collegeyardart.com/images/remove.jpg">
+        <input type="image" name="CancelButton" src="http://sandbox.speedhorse.com/images/update.jpg">
+        <input type="image" name="CancelButton" src="http://sandbox.speedhorse.com/images/remove.jpg">
       </span></div></td>
     </tr>
     {/section}
@@ -127,9 +127,9 @@
 </table>
 <div class="buttonblock">
   <div align="right">
-    <input type="image" name="CancelButton" src="http://collegeyardart.com/images/cancel.jpg">
+    <input type="image" name="CancelButton" src="http://sandbox.speedhorse.com/images/cancel.jpg">
     &nbsp; 
-    <input type="image" name="ConfirmOrderButton" src="http://collegeyardart.com/images/confirm.jpg">
+    <input type="image" name="ConfirmOrderButton" src="http://sandbox.speedhorse.com/images/confirm.jpg">
   </div>
 </div>
 </form>

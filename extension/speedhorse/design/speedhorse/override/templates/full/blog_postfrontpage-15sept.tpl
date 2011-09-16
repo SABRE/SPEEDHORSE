@@ -114,7 +114,7 @@
 
             <div id="comments">
             {def $facebookurl=""}
-			{set $facebookurl=concat('http://collegeyardart.com',$node.url_alias|ezurl(no))}
+			{set $facebookurl=concat('http://sandbox.speedhorse.com',$node.url_alias|ezurl(no))}
             <h2>Comments (<fb:comments-count href="{$facebookurl}"/></fb:comments-count>) </h2>
             
 			

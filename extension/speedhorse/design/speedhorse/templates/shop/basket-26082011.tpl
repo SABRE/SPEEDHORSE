@@ -136,7 +136,7 @@
 </tr>
 <tr class="bglight">
     <td colspan="6"></td>
-    <td colspan="1"><!--<input class="button" type="submit" name="StoreChangesButton" value="{'Update'|i18n('design/ezwebin/shop/basket')}" />-->&nbsp;<input type="image" name="StoreChangesButton" src="http://collegeyardart.com/images/update.jpg">&nbsp;&nbsp;<input type="image" name="imageField222" src="http://collegeyardart.com/images/remove.jpg"><!--<input class="button" type="submit" name="RemoveProductItemButton" value="{'Remove'|i18n('design/ezwebin/shop/basket')}" />--> </td>
+    <td colspan="1"><!--<input class="button" type="submit" name="StoreChangesButton" value="{'Update'|i18n('design/ezwebin/shop/basket')}" />-->&nbsp;<input type="image" name="StoreChangesButton" src="http://sandbox.speedhorse.com/images/update.jpg">&nbsp;&nbsp;<input type="image" name="imageField222" src="http://sandbox.speedhorse.com/images/remove.jpg"><!--<input class="button" type="submit" name="RemoveProductItemButton" value="{'Remove'|i18n('design/ezwebin/shop/basket')}" />--> </td>
 </tr>
 <tr>
   <td>&nbsp;</td>
@@ -238,8 +238,8 @@
 <div class="buttonblock">
 <!--<input class="button" type="submit" name="ContinueShoppingButton" value="{'Continue shopping'|i18n('design/ezwebin/shop/basket')}" />
 <input class="button" type="submit" name="CheckoutButton" value="{'Checkout'|i18n('design/ezwebin/shop/basket')}" /> --> 
-  <input type="image" name="ContinueShoppingButton" src="http://collegeyardart.com/images/continue2.jpg">&nbsp;
-  <input type="image" name="CheckoutButton" src="http://collegeyardart.com/images/chekout.jpg">
+  <input type="image" name="ContinueShoppingButton" src="http://sandbox.speedhorse.com/images/continue2.jpg">&nbsp;
+  <input type="image" name="CheckoutButton" src="http://sandbox.speedhorse.com/images/chekout.jpg">
 &nbsp;
 </div>
 
