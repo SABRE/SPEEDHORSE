@@ -1,0 +1,169 @@
+a:10:{s:7:"content";s:14362:"<div style="width:940px"><div style="float:left;">
+<div id="content"  style="z-index:9999;"><!--start div#content-->
+			
+			<div id="the_post">
+            
+            	<h2><a href="/layout/set/print/Getting-started/News/Discover-eZ-Publish-4.5">Codename Matterhorn</a></h2>
+                <!--<h2>TITLE GOES HERE AND CAN BE ON TWO LINES IF NEED BE</h2> In the case this does not need to be a link comment out the above and uncomment this-->
+                <div class="post-info"><h3><span style="font-weight:bold;">January 01, 1970</span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/userdetail/list/14">Administrator User</a></h3></div>
+            	
+            	<div class="info_bar">
+                    <div class="left-area">
+                        <a href="#" class="print">Print</a>
+                        <a href="/layout/set/print/content/tipafriend/118" title="Tip a friend" class="email">Email</a>
+                    </div><!--end div.left-area-->
+                    <div class="social">
+                        <iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fcollegeyardart.com/layout/set/print/Getting-started/News/Discover-eZ-Publish-4.5&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
+                    </div><!--end div.social-->
+                </div><!--end div.info_bar-->
+                
+                
+                                                                                  
+                                                				
+				                 				
+                                             
+                <div id="the_post_content" style="z-index:5;" >
+                	                       	                   	                                          	<div class="float_img_left"></div>
+                     					 
+					
+					
+					<div style="text-align:justify">
+<p>eZ Publish 4.5 is here, on time and eager to show off it's new traits and characteristics! If you have followed the beta versions, conference presentations, or simply heard something on the grapevine, the following headlines are no surprise to you:</p>
+<ul>
+
+<li>An extendable REST API to support external client implementations</li>
+
+<li>An asynchronous publishing mechanism to support queue handling of publishing requests</li>
+
+<li>Improved front-end editing</li>
+
+<li>Improved serviceability for enterprise customers</li>
+
+<li>Improved user registration work-flow</li>
+
+<li>A canonical link feature to increase search engine optimization</li>
+
+<li>A new database schema documentation</li>
+
+</ul>
+<p>and</p>
+<ul>
+
+<li>eZ Market is introduced to support developments and distribution of partner extensions</li>
+
+</ul>
+<a name="eztoc618_0_1" id="eztoc618_0_1"></a><h3><b>The REST API</b></h3><p>eZ Publish is now open for external developments. This is a long awaited feature and now it is our pleasure to welcome you to access and query content inside an eZ Publish installation. This will allow you to develop mobile and web functionality on top of your eZ Publish. In turn this will improve multi-channel publishing and customer retention.</p><p>In version 1.0 in the extendable REST API you can query content objects at will, meta-data and actual values. Follow eZ Systems news for the content of later REST API developments. Please use the REST API, it will be exciting to have your feedback in order to expand it further!</p><a name="eztoc618_0_2" id="eztoc618_0_2"></a><h3><b>Asynchronous publishing</b></h3><p>eZ Publish 4.5 supports asynchronous publishing in an environment with a large simultaneous communication to the database. For the big, enterprise customer with multi-editors this asynchronous publishing feature will fit the bill. The feature will control the number of objects that can be published concurrently.</p><p>When enabled publishing requests will be sent to a queue for asynchronous publishing. A daemon queries the publishing requests and manages the queue in the background, giving feedback on the status of publishing requests.</p><p>The asynchronous publishing feature works on multiple databases, will improve your database error handling and offers you filtering hooks for priority handling, so that the important requests can be published on the fly.</p><a name="eztoc618_0_3" id="eztoc618_0_3"></a><h3><b>Improved front-end editing</b></h3><p>Usability is at the forefront for eZ Publish developers. In this release we have made usability improvements on the front-end editing and eZ Flow block editing. Not much to say about that really, we have saved some screen real estate, the layout is more in sync with the Admin2 layout introduced in 4.3 and 4.4 and the new icons are easier to understand and active icons are easy to discern from disabled icons. We simply hope you like it!</p><p>The new eZ Flow and eZ WebIn front-end editing toolbar always rests on top of your page, this will make it interfere less with the layouts of your web pages, hope you like that, too!</p><a name="eztoc618_0_4" id="eztoc618_0_4"></a><h3><b>Improved serviceability</b></h3><p>Enterprise customers will find improvements in the Service Portal. We have made a separate download page for Enterprise versions and extensions available per version. There is a new, automated installation of the eZ Network including installation sanity checks. There is also a new counter for the number of stored objects leaving both eZ Systems and customers fully aware of the network agreement limits. These improvements should cater for reliable, more robust and more secure enterprise installations. Hope you think so, too!</p><a name="eztoc618_0_5" id="eztoc618_0_5"></a><h3><b>Approval work-flow for user registration</b></h3><p>A new work-flow feature has been added to 4.5. It supports that users will get notification when they have finished their account registration upon self-registration in the ez Publish log-in screen. This will confirm to the user that he now indeed is an approved user on the system, without the interference of a human hand.</p><a name="eztoc618_0_6" id="eztoc618_0_6"></a><h3><b>A canonical link</b><b>&nbsp;</b></h3><p>eZ Publish 4.5 supports a canonical link feature that helps search engines to figure out duplicate content issues and allow them to index relevant content. You use the canonical link to tell the search engines which url is the preferred one when you have several duplicate url’s.</p><a name="eztoc618_0_7" id="eztoc618_0_7"></a><h3><b>eZ Market</b><b>&nbsp;</b></h3><p>We urge partners to come forward with their extensions. To support this we are now introducing eZ Market, a tool for introducing and distributing extensions developed by our partners. For now we are in a certification process where we have partner extensions like eZ Varnish Cache and CJW Newsletter as examples of mature extensions ready to be distributed to eZ Publish installations near you! Check it out, contribute and help us make the eZ Publish App Store!</p></div>
+			
+				
+                </div><!--end div#the_post_content-->
+                
+                <div class="info_bar">
+            	<div class="left-area">
+                	<a href="#" class="print">Print</a>
+                    <a href="/layout/set/print/content/tipafriend/118" title="Tip a friend" class="email">Email</a>
+                </div><!--end div.left-area-->
+                <div class="social">
+                	<iframe style="width:100px;" src="//www.facebook.com/plugins/like.php?app_id=216190148439088&amp;href=http%3A%2F%2Fcollegeyardart.com/layout/set/print/Getting-started/News/Discover-eZ-Publish-4.5&amp;send=false&amp;layout=button_count&amp;width=255&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:21px;" allowTransparency="true"></iframe>
+                </div><!--end div.social-->
+            </div><!--end div.info_bar-->
+            </div><!--end div#the_post-->
+
+			<div id="bottom_content_wrap" style="z-index:5;">
+				<div id="left_bottom_panel">
+					<h2 class="section_title">We Recommend</h2>
+                    
+                    <ul class="speedhorse_list">
+					                 	       				                    			                               				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-1">
+Regular Headline Goes Here 1</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-2">
+Regular Headline Goes Here 2</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-3">
+Regular Headline Goes Here 3</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-4">
+Regular Headline Goes Here 4</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-5">
+Regular Headline Goes Here 5</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-6">
+Regular Headline Goes Here 6</a></li>
+                    			                           				<li><a href="/layout/set/print/We-Recommend/Regular-Headline-Goes-Here-7">
+Regular Headline Goes Here 7</a></li>
+                    			       				 
+            		</ul>
+				</div><!-- #left_bottom_panel -->
+
+				<div id="left_bottom_panel" class="right_bottom_panel"><!--start div#left_bottom_panel on the right-->
+					<h2 class="section_title">Related News</h2>
+					<ul class="speedhorse_list">
+					                 	       				                    			                               				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-1">
+Regular Headline Goes Here 1</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-2">
+Regular Headline Goes Here 2</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-3">
+Regular Headline Goes Here 3</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-4">
+Regular Headline Goes Here 4</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-5">
+Regular Headline Goes Here 5</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-6">
+Regular Headline Goes Here 6</a></li>
+                    			                           				<li><a href="/layout/set/print/Related-News/Regular-Headline-Goes-Here-7">
+Regular Headline Goes Here 7</a></li>
+                    			       				 
+            		</ul>
+				</div><!--end div#left_bottom_panel on the right -->
+			</div><!--end div#bottom_content_wrap -->
+           </div><!--end div#content--> 
+            <div id="comments" style="z-index:1; margin-top:auto; position:relative;">
+            						<h2>Comments (<fb:comments-count href="http://collegeyardart.com/layout/set/print/Getting-started/News/Discover-eZ-Publish-4.5"/></fb:comments-count>) </h2>
+			
+			 <script>(function(d){
+              var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+              js = d.createElement('script'); js.id = id; js.async = true;
+              js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+              d.getElementsByTagName('head')[0].appendChild(js);
+            }(document));</script>
+            <div class="fb-comments" data-href="http://collegeyardart.com/layout/set/print/Getting-started/News/Discover-eZ-Publish-4.5" data-num-posts="2" data-width="500"></div>
+            </div><!--end div#comments-->
+		
+
+</div><div style="float:right">
+        <div id="sidebar"><!--start div#sidebar-->
+			                        				                    			                               				
+
+    
+        
+    
+                                                                                                                                    <a href="/layout/set/print/Advertisment/Big-Advertisment/Big-Advertise1">        <img src="/var/ezflow_site/storage/images/advertisment/big-advertisment/big-advertise1/1907-4-eng-US/Big-Advertise1_large.jpg" width="360" height="270"  style="border: 0px  ;" alt="Big Advertise1" title="Big Advertise1" />
+        </a>    
+    
+    
+                        			       				        
+		<div style="height:35px;"></div>
+	
+			<a id="sidebar_site_link_1" href="#"></a>
+			<a id="sidebar_site_link_2" href="#"></a>
+
+			<h2 class="section_title">special focus title</h2>
+            <ul class="speedhorse_list">
+			                        				                    			                               				<li><a href="/layout/set/print/Special-Focus-Title/Regular-Headline-Goes-Here-0">
+Regular Headline Goes Here 0</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article1">
+Feature Article1</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article2">
+Feature Article2</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article3">
+Feature Article3</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article4">
+Feature Article4</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article5">
+Feature Article5</a></li>
+                    			                           				<li><a href="/layout/set/print/Special-Focus-Title/Feature-Article6">
+Feature Article6</a></li>
+                    			       				 
+            </ul>
+            
+            
+
+		</div><!--end div#sidebar -->
+        
+</div></div>        ";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:4:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:15:"Getting started";s:3:"url";s:21:"/content/view/full/78";s:9:"url_alias";s:15:"Getting-started";s:7:"node_id";s:2:"78";}i:2;a:4:{s:4:"text";s:4:"News";s:3:"url";s:22:"/content/view/full/105";s:9:"url_alias";s:20:"Getting-started/News";s:7:"node_id";s:3:"105";}i:3;a:4:{s:4:"text";s:23:"Discover eZ Publish 4.5";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"118";}}s:10:"title_path";a:4:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:15:"Getting started";s:3:"url";s:21:"/content/view/full/78";s:9:"url_alias";s:15:"Getting-started";s:7:"node_id";s:2:"78";}i:2;a:4:{s:4:"text";s:4:"News";s:3:"url";s:22:"/content/view/full/105";s:9:"url_alias";s:20:"Getting-started/News";s:7:"node_id";s:3:"105";}i:3;a:3:{s:4:"text";s:23:"Discover eZ Publish 4.5";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"118";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"116";s:7:"node_id";s:3:"118";s:14:"parent_node_id";s:3:"105";s:8:"class_id";s:2:"16";s:16:"class_identifier";s:7:"article";s:9:"remote_id";s:32:"25a0c60a6c310568e04d42e1c7981f4a";s:14:"node_remote_id";s:32:"71c70cb4a3417c01f366e5d34c87c374";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"4";s:9:"url_alias";s:44:"Getting-started/News/Discover-eZ-Publish-4.5";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"2";s:12:"main_node_id";s:3:"118";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:1:"1";s:23:"parent_class_identifier";s:6:"folder";}s:13:"template_list";a:9:{i:0;s:83:"extension/speedhorse/design/speedhorse/override/templates/full/articlefrontpage.tpl";i:1;s:61:"design/standard/templates/content/datatype/view/ezxmltext.tpl";i:2;s:94:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/paragraph.tpl";i:3;s:64:"design/standard/templates/content/datatype/view/ezxmltags/li.tpl";i:10;s:64:"design/standard/templates/content/datatype/view/ezxmltags/ul.tpl";i:14;s:68:"design/standard/templates/content/datatype/view/ezxmltags/strong.tpl";i:15;s:68:"design/standard/templates/content/datatype/view/ezxmltags/header.tpl";i:41;s:60:"design/standard/templates/content/datatype/view/ezstring.tpl";i:55;s:59:"design/standard/templates/content/datatype/view/ezimage.tpl";}s:9:"cache_ttl";i:-1;}

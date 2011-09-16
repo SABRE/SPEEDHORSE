@@ -1,0 +1,12 @@
+<?php
+// This is a auto generated ini cache file, time created:Wed, 14 Sep 11 10:00:02 -0500
+$data = array(
+'rev' => 2,
+'created' => '2011-09-14T10:00:02-05:00',
+'charset' => "utf-8",
+'files' => array (0 => 'settings/cronjob.ini',1 => 'extension/ezcomments/settings/cronjob.ini.append.php',2 => 'extension/ezflow/settings/cronjob.ini.append.php',3 => 'extension/ezfind/settings/cronjob.ini.append.php',4 => 'extension/ez_network/settings/cronjob.ini.append.php',
+),
+'file' => 'settings/cronjob.ini',
+'val' => array ('CronjobSettings' => array ('ScriptDirectories' => array (0 => 'cronjobs',),'Scripts' => array (0 => 'unpublish.php',1 => 'rssimport.php',2 => 'indexcontent.php',3 => 'hide.php',4 => 'subtreeexpirycleanup.php',5 => 'internal_drafts_cleanup.php',6 => 'ezfindexcontent.php',7 => 'ezfoptimizeindex.php',),'ExtensionDirectories' => array (0 => 'ezfind',1 => 'ezcomments',2 => 'ezflow',3 => 'ezfind',4 => 'ez_network',),'MaxScriptExecutionTime' => '43200',),'CronjobPart-infrequent' => array ('Scripts' => array (0 => 'basket_cleanup.php',1 => 'linkcheck.php',2 => 'ezfindexcontent.php',3 => 'ezfoptimizeindex.php',4 => 'unpublish.php',5 => 'rssimport.php',6 => 'indexcontent.php',7 => 'hide.php',8 => 'ezcomcleanupsubscription.php',),),'CronjobPart-frequent' => array ('Scripts' => array (0 => 'notification.php',1 => 'workflow.php',),),'linkCheckSettings' => array ('SiteURL' => array (0 => '',),),'CronjobPart-unlock' => array ('Scripts' => array (0 => 'unlock.php',),),'CronjobPart-cluster_maintenance' => array ('Scripts' => array (0 => 'clusterpurge.php',),),'CronjobPart-ezcomments' => array ('Scripts' => array (0 => 'ezcomhandlenotification.php',),),'CronjobPart-ezflow' => array ('Scripts' => array (0 => 'ezflowupdate.php',),),'CronjobPart-ezflow-cleanup' => array ('Scripts' => array (0 => 'ezflowcleanup.php',),),'CronjobPart-ezfindexcontent' => array ('Scripts' => array (0 => 'ezfindexcontent.php',),),'CronjobPart-ezfoptimizeindex' => array ('Scripts' => array (0 => 'ezfoptimizeindex.php',),),'CronjobPart-monitor' => array ('Scripts' => array (0 => 'runmonitor.php',),),'CronjobPart-sync_network' => array ('Scripts' => array (0 => 'syncnetwork.php',),),'CronjobPart-patch' => array ('Scripts' => array (0 => 'runpatch.php',),),
+));
+?>

@@ -1,0 +1,23 @@
+<?php
+$activeExtensions = array( "ezmultiupload",
+                           "ez_network",
+                           "ezfind",
+                           "ezjscore",
+                           "ezstarrating",
+                           "ezflow",
+                           "ezwt",
+                           "ezwebin",
+                           "ezie",
+                           "ezoe",
+                           "ezodf",
+                           "ezprestapiprovider",
+                           "hfpfetchrandom",
+                           "topdrop",
+                           "speedhorse",
+                           "ngcomments",
+                           "ezcomments",
+                           "ngconnect",
+                           "ezuser",
+                           "multimedia",
+                           "ezgmaplocation" );
+?>

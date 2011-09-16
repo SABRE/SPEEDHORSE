@@ -1,0 +1,12 @@
+<?php
+// This is a auto generated ini cache file, time created:Wed, 14 Sep 11 14:50:58 +0000
+$data = array(
+'rev' => 2,
+'created' => '2011-09-14T14:50:58+00:00',
+'charset' => "utf-8",
+'files' => array (0 => 'settings/module.ini',1 => 'extension/smartshort/settings/module.ini.append.php',2 => 'extension/multimedia/settings/module.ini.append.php',3 => 'extension/ezuser/settings/module.ini.append.php',4 => 'extension/ngconnect/settings/module.ini.append.php',5 => 'extension/ezcomments/settings/module.ini.append.php',6 => 'extension/hfpfetchrandom/settings/module.ini.append.php',7 => 'extension/ezodf/settings/module.ini.append.php',8 => 'extension/ezoe/settings/module.ini.append.php',9 => 'extension/ezie/settings/module.ini.append.php',10 => 'extension/ezwt/settings/module.ini.append.php',11 => 'extension/ezflow/settings/module.ini.append.php',12 => 'extension/ezjscore/settings/module.ini.append.php',13 => 'extension/ezfind/settings/module.ini.append.php',14 => 'extension/ez_network/settings/module.ini.append.php',15 => 'extension/ezmultiupload/settings/module.ini.append.php',
+),
+'file' => 'settings/module.ini',
+'val' => array ('ModuleSettings' => array ('ModuleRepositories' => array (0 => 'kernel',1 => 'kernel/private/modules',),'ExtensionRepositories' => array (0 => 'multimedia',1 => 'ezuser',2 => 'ngconnect',3 => 'ezcomments',4 => 'hfpfetchrandom',5 => 'ezodf',6 => 'ezoe',7 => 'ezie',8 => 'ezwt',9 => 'ezflow',10 => 'ezjscore',11 => 'ezfind',12 => 'ez_network',13 => 'ezmultiupload',),'ModuleList' => array (0 => 'class',1 => 'collaboration',2 => 'content',3 => 'error',4 => 'ezinfo',5 => 'infocollector',6 => 'layout',7 => 'notification',8 => 'oauth',9 => 'oauthadmin',10 => 'package',11 => 'pdf',12 => 'role',13 => 'rss',14 => 'search',15 => 'section',16 => 'settings',17 => 'setup',18 => 'shop',19 => 'state',20 => 'trigger',21 => 'url',22 => 'user',23 => 'visual',24 => 'workflow',25 => 'switchlanguage',26 => 'mav',27 => 'botr_video_dt',28 => 'ngconnect',29 => 'comment',30 => 'ezodf',31 => 'ezoe',32 => 'ezie',33 => 'websitetoolbar',34 => 'ezflow',35 => 'flash',36 => 'ezjscore',37 => 'ezfind',38 => 'network',39 => 'ezmultiupload',),'AllowedDeviation' => '20','HangingTags' => array (0 => '<p',1 => '<a',2 => '<b',3 => '<i',4 => '<br',5 => '<table',6 => '<tr',7 => '<td',8 => '<ol',9 => '<ul',10 => '<li',11 => '<h1',12 => '<h2',13 => '<h3',14 => '<h3',15 => '<h4',16 => '<h5',17 => '<h6',),'Modulelist' => array (0 => 'userdetail',),),'ModuleOverrides' => array ('NavigationPart' => array (),),
+));
+?>

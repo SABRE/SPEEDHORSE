@@ -1,0 +1,225 @@
+a:10:{s:7:"content";s:13261:"<div id="content"><!--start div#content-->
+			<div id="blog_directory">
+            	<h4>Blog Directory:</h4>
+                                        				                    			                               				<a href="/Blog-Container/Directory-A">
+Directory A</a>
+                                                           				<a href="/Blog-Container/Directory-B">
+Directory B</a>
+                                                           				<a href="/Blog-Container/Directory-C">
+Directory C</a>
+                                       				 
+            </div><!--end div#blog_directory-->
+			<div id="the_post">
+            
+            	<h2><a href="/Blog-Container/Directory-B/Music-Blog/Blog-Title-4">Blog Title 4</a></h2>
+                <!--<h2>Blog Title Here</h2> In the case this does not need to be a link comment out the above and uncomment this-->
+                <div class="post-info large">Blog Headline</div>
+            	
+            	<div class="info_bar">
+                    <div class="left-area">
+                        <a href="#" class="print">Print</a>
+                        <a href="/content/tipafriend/317" title="Email a friend" class="email">Email</a>
+                    </div><!--end div.left-area-->
+                    <div class="social">
+                        <img src="/images/fb_like.jpg" />
+                        <img src="/images/fb_people_like.jpg" />
+                        <img src="/images/twitter.jpg" />
+                    </div><!--end div.social-->
+                </div><!--end div.info_bar-->
+                
+                <div id="the_post_content">
+                	<h3>Blog Headline<span>Monday, October 04, 2010</span></h3>
+                    
+                	<div class="float_img_left">
+
+    
+        
+    
+                                                                                                                                            <img src="/var/ezflow_site/storage/images/blog-container/directory-b/category-b/blog-title-4/2666-1-eng-US/Blog-Title-4_large.png" width="80" height="80"  style="border: 0px  ;" alt="Blog Title 4" title="Blog Title 4" />
+            
+    
+    
+    </div>
+                	<div style="text-align:justify">
+<p>Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.Lorem ipsum dolor sit amet, cons ec vulputate lorem in dolor.</p></div>
+                </div><!--end div#the_post_content-->
+                
+                <div class="info_bar">
+            	<div class="left-area">
+                	<a href="#" class="print">Print</a>
+                    <a href="/content/tipafriend/317" title="Email a friend" class="email">Email</a>
+                </div><!--end div.left-area-->
+                <div class="social">
+                	<img src="/images/fb_like.jpg" />
+                    <img src="/images/fb_people_like.jpg" />
+                    <img src="/images/twitter.jpg" />
+                </div><!--end div.social-->
+            </div><!--end div.info_bar-->
+            </div><!--end div#the_post-->
+
+			<div id="bottom_content_wrap">
+				<div id="left_bottom_panel">
+					<h2 class="section_title">We Recommend</h2>
+					<ul class="speedhorse_list">
+					                 	       				                    			                               				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-1">
+Regular Headline Goes Here 1</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-2">
+Regular Headline Goes Here 2</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-3">
+Regular Headline Goes Here 3</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-4">
+Regular Headline Goes Here 4</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-5">
+Regular Headline Goes Here 5</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-6">
+Regular Headline Goes Here 6</a></li>
+                    			                           				<li><a href="/We-Recommend/Regular-Headline-Goes-Here-7">
+Regular Headline Goes Here 7</a></li>
+                    			       				 
+            		</ul>
+				</div><!-- #left_bottom_panel -->
+
+				<div id="left_bottom_panel" class="right_bottom_panel"><!--start div#left_bottom_panel on the right-->
+					<h2 class="section_title">Related News</h2>
+					<ul class="speedhorse_list">
+					                 	       				                    			                               				<li><a href="/Related-News/Regular-Headline-Goes-Here-1">
+Regular Headline Goes Here 1</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-2">
+Regular Headline Goes Here 2</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-3">
+Regular Headline Goes Here 3</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-4">
+Regular Headline Goes Here 4</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-5">
+Regular Headline Goes Here 5</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-6">
+Regular Headline Goes Here 6</a></li>
+                    			                           				<li><a href="/Related-News/Regular-Headline-Goes-Here-7">
+Regular Headline Goes Here 7</a></li>
+                    			       				 
+            		</ul>
+				</div><!--end div#left_bottom_panel on the right -->
+			</div><!--end div#bottom_content_wrap -->
+            
+      
+            <div id="comments">
+            	<h2>Comments (3)</h2>
+                <form method="post" action="">
+                	<img src="/images/post_comment_avatar.jpg" alt="Avatar" id="form_avatar" />
+                    <div id="form_right">
+                    	<textarea name="">Add a comment...</textarea>
+                        <div id="form_right_bottom">
+                        	<label for="facebook_post"><input type="checkbox" id="facebook_post" name="facebook_post" /> Post to Facebook</label>
+                            <span class="posting_as">Posting as Justing Kellner <a href="#">(Change)</a></span>
+                            <input type="submit" id="submit_comment" value="Comment" />
+                        </div><!--end div#form_right_bottom-->
+                    </div><!--end div#form_right-->
+                </form><!--end form-->
+                <div class="comment">
+                	<img src="/images/post_comment_avatar.jpg" alt="Avatar" class="comment_author_av" />
+                    <div class="comment_right">
+                    	<h4>Justin Kellner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in arcu eu nunc placerat vestibulum
+vitae at metus. Proin sed lacus justo. Nulla ut fermentum odio.</p>
+                        <span>
+                        	<a href="#">Like</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Reply</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Subscribe</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <cite>14 hours ago</cite>
+                        </span><!--end span-->
+                    </div><!--end div.comment_right-->
+                </div><!--end div.comment-->
+                <div class="comment">
+                	<img src="/images/post_comment_avatar.jpg" alt="Avatar" class="comment_author_av" />
+                    <div class="comment_right">
+                    	<h4>Justin Kellner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in arcu eu nunc placerat vestibulum
+vitae at metus. Proin sed lacus justo. Nulla ut fermentum odio.</p>
+                        <span>
+                        	<a href="#">Like</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Reply</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Subscribe</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <cite>14 hours ago</cite>
+                        </span><!--end span-->
+                    </div><!--end div.comment_right-->
+                </div><!--end div.comment-->
+                <div class="comment">
+                	<img src="/images/post_comment_avatar.jpg" alt="Avatar" class="comment_author_av" />
+                    <div class="comment_right">
+                    	<h4>Justin Kellner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in arcu eu nunc placerat vestibulum
+vitae at metus. Proin sed lacus justo. Nulla ut fermentum odio.</p>
+                        <span>
+                        	<a href="#">Like</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Reply</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <a href="#">Subscribe</a>
+                            &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                            <cite>14 hours ago</cite>
+                        </span><!--end span-->
+                    </div><!--end div.comment_right-->
+                </div><!--end div.comment-->
+            </div><!--end div#comments-->
+		</div><!--end div#content-->
+
+		<div id="sidebar"><!--start div#sidebar-->
+			                        				                    			                               				
+
+    
+        
+    
+                                                                                                                                    <a href="/Advertisment/Big-Advertisment/Big-Advertise1">        <img src="/var/ezflow_site/storage/images/advertisment/big-advertisment/big-advertise1/1907-4-eng-US/Big-Advertise1_large.jpg" width="360" height="270"  style="border: 0px  ;" alt="Big Advertise1" title="Big Advertise1" />
+        </a>    
+    
+    
+                        			       				        
+		<div style="height:35px;"></div>
+            
+            <h2 class="section_title" style="float:left;">Tags</h2>
+            
+            <div id="blog_tags" style="float:left;">
+                                                         <a href="/Blog-Container/Directory-B/Music-Blog/(id)/315/(tag)/Cat_B" title="Cat_B">Cat_B</a>
+                                                                                                  	
+            </div><!--end div#blog_tags-->
+            
+            <h2 class="section_title" style="float:left;">Blog Archives</h2>
+            	                            <div class="attribute-archive">
+                            <h1></h1>
+                            <ul style="float:left;" class="blog_archives_my">
+                                                        <li><a href="/Blog-Container/Directory-B/Music-Blog/(month)/8/(year)/2011" title="">August 2011</a></li>
+                                                        <li><a href="/Blog-Container/Directory-B/Music-Blog/(month)/10/(year)/2010" title="">October 2010</a></li>
+                                                        </ul>
+                        </div>
+
+            
+        			
+            
+			<a id="sidebar_site_link_1" href="#" style="float:left;"></a>
+			<a id="sidebar_site_link_2" href="#" style="float:left;"></a>
+
+			<h2 class="section_title" style="float:left;">special focus title</h2>
+			<ul class="speedhorse_list" style="float:left; width:100%;">
+			                        				                    			                               				<li><a href="/Special-Focus-Title/Regular-Headline-Goes-Here-0">
+Regular Headline Goes Here 0</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article1">
+Feature Article1</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article2">
+Feature Article2</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article3">
+Feature Article3</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article4">
+Feature Article4</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article5">
+Feature Article5</a></li>
+                    			                           				<li><a href="/Special-Focus-Title/Feature-Article6">
+Feature Article6</a></li>
+                    			       				 
+            </ul>
+ 			</div><!--end div#sidebar -->";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:5:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:14:"Blog Container";s:3:"url";s:22:"/content/view/full/307";s:9:"url_alias";s:14:"Blog-Container";s:7:"node_id";s:3:"307";}i:2;a:4:{s:4:"text";s:11:"Directory B";s:3:"url";s:22:"/content/view/full/309";s:9:"url_alias";s:26:"Blog-Container/Directory-B";s:7:"node_id";s:3:"309";}i:3;a:4:{s:4:"text";s:10:"Music Blog";s:3:"url";s:22:"/content/view/full/315";s:9:"url_alias";s:37:"Blog-Container/Directory-B/Music-Blog";s:7:"node_id";s:3:"315";}i:4;a:4:{s:4:"text";s:12:"Blog Title 4";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"317";}}s:10:"title_path";a:5:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:14:"Blog Container";s:3:"url";s:22:"/content/view/full/307";s:9:"url_alias";s:14:"Blog-Container";s:7:"node_id";s:3:"307";}i:2;a:4:{s:4:"text";s:11:"Directory B";s:3:"url";s:22:"/content/view/full/309";s:9:"url_alias";s:26:"Blog-Container/Directory-B";s:7:"node_id";s:3:"309";}i:3;a:4:{s:4:"text";s:10:"Music Blog";s:3:"url";s:22:"/content/view/full/315";s:9:"url_alias";s:37:"Blog-Container/Directory-B/Music-Blog";s:7:"node_id";s:3:"315";}i:4;a:3:{s:4:"text";s:12:"Blog Title 4";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"317";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"347";s:7:"node_id";s:3:"317";s:14:"parent_node_id";s:3:"315";s:8:"class_id";s:2:"20";s:16:"class_identifier";s:9:"blog_post";s:9:"remote_id";s:32:"6c7aa667bdda30ef1cb3ef4df82f0857";s:14:"node_remote_id";s:32:"2591305b6c9eedfb59dd67c1b5b4b5a5";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"5";s:9:"url_alias";s:50:"Blog-Container/Directory-B/Music-Blog/Blog-Title-4";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"2";s:12:"main_node_id";s:3:"317";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:2:"19";s:23:"parent_class_identifier";s:4:"blog";}s:13:"template_list";a:6:{i:0;s:85:"extension/speedhorse/design/speedhorse/override/templates/full/blog_postfrontpage.tpl";i:1;s:60:"design/standard/templates/content/datatype/view/ezstring.tpl";i:4;s:59:"design/standard/templates/content/datatype/view/ezimage.tpl";i:5;s:61:"design/standard/templates/content/datatype/view/ezxmltext.tpl";i:6;s:94:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/paragraph.tpl";i:22;s:74:"extension/speedhorse/design/speedhorse/templates/parts/blog/extra_info.tpl";}s:9:"cache_ttl";i:-1;}

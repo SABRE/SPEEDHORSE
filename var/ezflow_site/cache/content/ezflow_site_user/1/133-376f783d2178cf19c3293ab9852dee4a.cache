@@ -1,0 +1,61 @@
+a:11:{s:7:"content";s:2715:"
+
+
+
+
+
+
+
+<div class="border-box">
+<div class="border-tl"><div class="border-tr"><div class="border-tc"></div></div></div>
+<div class="border-ml"><div class="border-mr"><div class="border-mc float-break">
+
+<div class="content-view-full">
+    <div class="class-flash_recorder">
+
+        <div class="attribute-header">
+            <h1>Record Live Video</h1>
+        </div>
+
+        <div class="block">    
+            <script type="text/javascript">
+            <!--
+                insertMedia( '<object type="application/x-shockwave-flash" data="/extension/speedhorse/design/speedhorse/flash/broadcaster.swf" width="340" height="340"> ');
+                insertMedia( '<param name="movie" value="/extension/speedhorse/design/speedhorse/flash/broadcaster.swf" /> ');
+                insertMedia( '<param name="scale" value="exactfit" /> ');
+                insertMedia( '<param name="wmode" value="opaque" />' );
+                insertMedia( '<param name="allowScriptAccess" value="sameDomain" />');
+                insertMedia( '<param name="allowFullScreen" value="true" />');
+                insertMedia( '<param name="bgcolor" value="#ffffff" />' );
+                insertMedia( '<param name="quality" value="high" />' );
+                insertMedia( '<param name="flashvars" value="streamserver=&amp;fileserver=" />');
+                insertMedia( '<param name="menu" value="false" />' );
+                insertMedia( '<p>No <a href="http://www.macromedia.com/go/getflashplayer">Flash player<\/a> avaliable!<\/p>');
+                insertMedia( '<\/object>' );
+            //-->
+            </script>
+
+            <noscript>
+            <object type="application/x-shockwave-flash" data="/extension/speedhorse/design/speedhorse/flash/broadcaster.swf?streamserver=&amp;fileserver=" width="340" height="340">          
+                <param name="movie" value="/extension/speedhorse/design/speedhorse/flash/broadcaster.swf?streamserver=&amp;fileserver=" />
+                <param name="scale" value="exactfit" />
+                <param name="wmode" value="opaque" />
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="bgcolor" value="#ffffff" />
+                <param name="allowFullScreen" value="false" />
+                <param name="quality" value="high" />
+                <param name="flashvars" value="streamserver=&amp;fileserver=" />
+                <param name="menu" value="false" />
+                <p>No <a href="http://www.macromedia.com/go/getflashplayer">Flash player</a> avaliable!</p>
+            </object>
+            </noscript>
+        </div>
+        <div class="block">
+                    </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:3:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:10:"Live Video";s:3:"url";s:22:"/content/view/full/132";s:9:"url_alias";s:10:"Live-Video";s:7:"node_id";s:3:"132";}i:2;a:4:{s:4:"text";s:17:"Record Live Video";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"133";}}s:10:"title_path";a:3:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:10:"Live Video";s:3:"url";s:22:"/content/view/full/132";s:9:"url_alias";s:10:"Live-Video";s:7:"node_id";s:3:"132";}i:2;a:3:{s:4:"text";s:17:"Record Live Video";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"133";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"131";s:7:"node_id";s:3:"133";s:14:"parent_node_id";s:3:"132";s:8:"class_id";s:2:"30";s:16:"class_identifier";s:14:"flash_recorder";s:9:"remote_id";s:32:"492a2be33646a2bf2489260ac7dac8ca";s:14:"node_remote_id";s:32:"a3ce9193bf6d8a275e072617d1f2c327";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"3";s:9:"url_alias";s:28:"Live-Video/Record-Live-Video";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"2";s:12:"main_node_id";s:3:"133";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:1:"1";s:23:"parent_class_identifier";s:6:"folder";}s:13:"template_list";a:1:{i:0;s:81:"extension/speedhorse/design/speedhorse/override/templates/full/flash_recorder.tpl";}s:9:"cache_ttl";s:1:"0";s:8:"no_cache";b:1;}

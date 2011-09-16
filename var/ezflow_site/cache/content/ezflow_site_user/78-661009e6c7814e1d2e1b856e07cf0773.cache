@@ -1,0 +1,232 @@
+a:10:{s:7:"content";s:9592:"<div class="border-box">
+<div class="border-tl"><div class="border-tr"><div class="border-tc"></div></div></div>
+<div class="border-ml"><div class="border-mr"><div class="border-mc float-break">
+
+<div class="content-view-full">
+    <div class="class-folder">
+
+    <div class="attribute-header">
+        <h1>Getting started</h1>
+    </div>
+
+    
+
+                                                                    
+                                                <div class="attribute-short_description">
+                
+            </div>
+                                <div class="attribute-description">
+                
+            </div>
+                                            <div class="attribute-tags">
+                
+            </div>
+                                <div class="attribute-publish_date">
+                            </div>
+                                <div class="attribute-container_id">
+                
+0            </div>
+            
+                                            
+                
+                <div class="content-view-children">
+                                                                        
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Documentation">Documentation</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<table class="default" border="0" cellpadding="2" cellspacing="0" width="100%" summary="documentation"><tr><td valign="top">  <a href="http://doc.ez.no/eZ-Publish/Technical-manual/4.5" target="_blank">Technical manual</a>
+  </td></tr><tr class="bglight"><td valign="top">  <a href="http://doc.ez.no/eZ-Publish/User-manual/4.5" target="_blank">User manual</a>
+  </td></tr>
+</table>
+    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-folder">
+
+        <h2><a href="/layout/set/print/Getting-started/News">News</a></h2>
+
+       
+    </div>
+</div>
+                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/How-to-use-eZ-Find-search-fetch-instead-of-standard-content-list-tree-fetch">Need for speed with eZ Find</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<p>This tutorial should give eZ Publish developers some new ideas on how to use eZ Find. The ever growing need for speed can be achieved by using eZ Find search function instead of standard content list/tree fetch functions. Solr engine, used by eZ Find, is far more superior regarding read speed than mysql (at least in the way eZ Publish uses them). This fact becomes apparent when dealing with 10 or 100 thousands of objects in your database with complicated eZ Publish SQL queries starting to slow down rapidly. If you need text search capabilities difference in read speed becomes even more obvious.</p>    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Datatypes-in-Solr-and-eZ-Find">Advanced development with eZ Find - part 1</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<p>Here is the first part of a series of tutorials about eZ Find. At the end of this series, you will have been exposed all details on how it works, and be able to make an advanced usage, in various context, of this enterprise-grade search plug-in. This series will serve as a base for a talk on the subject at the eZ Conference 2010, in Berlin. As well as the Libre Software meeting.</p>    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Creating-eZ-Publish-Objects-in-PHP">Creating eZ Publish Objects in PHP</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<p>This tutorial will show you how to create eZ Publish objects using PHP to allow you to dynamically create or import content from elsewhere. After reading this article you should be able to create objects for any situation including those with XML fields, image or file fields and object relations.</p>    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Adding-Siteaccesses-in-eZ-Publish">Lots of Websites, One eZ Publish Installation</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<p>This tutorial gives developers the power to extend the features and flexibility of eZ Publish beyond a single website, to having an unlimited number in one installation. At the end of this tutorial you will have learned how to best leverage eZ Publish's siteaccess concept to create multiple websites. It will let you apply this concept through the concrete case of building two different, multilingual websites on one single eZ Publish instance.</p>    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Adding-custom-security-policy-limitations-to-your-modules">Adding custom security policy limitations to your modules </a></h2>
+
+    
+        <div class="attribute-short">
+        
+<p>This tutorial will show you how to deal with custom security policy limitations for your modules. Once read, you will be able to fully take advantage of the granularity in eZ Publish's security and access control system.</p>    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Get-involved">Get involved</a></h2>
+
+    
+        <div class="attribute-short">
+        
+<table class="default" border="0" cellpadding="2" cellspacing="0" width="50%" summary="get_involved"><tr><td valign="top">  
+<div class=""><div class="content-view-embed">
+<div class="class-image">
+    <div class="attribute-image">
+
+    
+        
+    
+                                                                                                                                            <img src="/var/ezflow_site/storage/images/media/images/icon-footer-ez/762-1-eng-US/icon-footer-ez.png" width="16" height="16"  style="border: 0px solid ;" alt="icon-footer-ez" title="icon-footer-ez" />
+            
+    
+    
+    </div>
+
+     </div>
+</div>
+</div>
+  </td><td valign="top">  <a href="http://share.ez.no/forums" id="internal-source-marker_0.15448186383582652" target="_self">Forums</a>
+  </td><td valign="top">  <a href="http://share.ez.no/blogs" target="_self">Blogs</a>
+  </td><td valign="top">  &nbsp;<a href="http://twitter.com/ezcommunity" target="_self">Twitter</a>
+  </td><td valign="top">  <a href="http://www.linkedin.com/groups?gid=2759" target="_self">LinkedIn</a>
+  </td></tr>
+</table>
+    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/Guidelines">Guidelines </a></h2>
+
+    
+        <div class="attribute-short">
+        
+<table class="default" border="0" cellpadding="2" cellspacing="0" width="100%" summary="guidlines"><tr><td valign="top">  <a href="/layout/set/print/Getting-started/Guidelines" target="_self">Guidelines&nbsp;for building an eZ Publish site</a>
+  </td></tr>
+</table>
+    </div>
+    
+    </div>
+</div>                                                    
+
+<div class="content-view-line">
+    <div class="class-article float-break">
+
+    <h2><a href="/layout/set/print/Getting-started/How-to-develop-with-eZ-Publish">How to develop with eZ Publish</a></h2>
+
+            <div class="attribute-image">
+            
+
+    
+        
+    
+                                                                                                                                    <a href="/layout/set/print/Getting-started/How-to-develop-with-eZ-Publish">        <img src="/var/ezflow_site/storage/images/getting-started/how-to-develop-with-ez-publish/390-1-eng-US/How-to-develop-with-eZ-Publish_articlethumbnail.png" width="70" height="57"  style="border: 0px  ;" alt="How to develop with eZ Publish" title="How to develop with eZ Publish" />
+        </a>    
+    
+    
+            </div>
+    
+        <div class="attribute-short">
+        
+<p>eZ Publish is more than a basic CMS, but a content management platform based on a clear API that allows developers to customize and extend eZ Publish.</p>    </div>
+    
+    </div>
+</div>                                                            </div>
+
+                
+
+<div class="pagenavigator">
+<p>
+
+            
+            <span class="next"><a href="/layout/set/print/Getting-started/(offset)/10"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+    
+        <span class="current">1</span>
+
+                      <span class="other"><a href="/layout/set/print/Getting-started/(offset)/10">2</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+
+            
+    
+    </div>
+</div>
+
+</div></div></div>
+<div class="border-bl"><div class="border-br"><div class="border-bc"></div></div></div>
+</div>";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:2:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:15:"Getting started";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:2:"78";}}s:10:"title_path";a:2:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:3:{s:4:"text";s:15:"Getting started";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:2:"78";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:2:"76";s:7:"node_id";s:2:"78";s:14:"parent_node_id";s:1:"2";s:8:"class_id";s:1:"1";s:16:"class_identifier";s:6:"folder";s:9:"remote_id";s:32:"b923b9bf97d98182a65165f8d8e4f852";s:14:"node_remote_id";s:32:"24a8f0c858a5495289fa8fc86fa8e1cd";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"2";s:9:"url_alias";s:15:"Getting-started";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"3";s:12:"main_node_id";s:2:"78";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:2:"23";s:23:"parent_class_identifier";s:9:"frontpage";}s:13:"template_list";a:16:{i:0;s:67:"extension/speedhorse/design/speedhorse/templates/node/view/full.tpl";i:1;s:61:"design/standard/templates/content/datatype/view/ezxmltext.tpl";i:3;s:61:"design/standard/templates/content/datatype/view/ezkeyword.tpl";i:4;s:62:"design/standard/templates/content/datatype/view/ezdatetime.tpl";i:5;s:61:"design/standard/templates/content/datatype/view/ezinteger.tpl";i:6;s:74:"extension/speedhorse/design/speedhorse/override/templates/line/article.tpl";i:8;s:66:"design/standard/templates/content/datatype/view/ezxmltags/link.tpl";i:9;s:64:"design/standard/templates/content/datatype/view/ezxmltags/td.tpl";i:10;s:87:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/tr.tpl";i:14;s:67:"design/standard/templates/content/datatype/view/ezxmltags/table.tpl";i:15;s:73:"extension/speedhorse/design/speedhorse/override/templates/line/folder.tpl";i:18;s:94:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/paragraph.tpl";i:33;s:67:"design/standard/templates/content/datatype/view/ezxmltags/embed.tpl";i:34;s:67:"extension/ezwebin/design/ezwebin/override/templates/embed/image.tpl";i:35;s:59:"design/standard/templates/content/datatype/view/ezimage.tpl";i:57;s:46:"design/standard/templates/navigator/google.tpl";}s:9:"cache_ttl";i:-1;}

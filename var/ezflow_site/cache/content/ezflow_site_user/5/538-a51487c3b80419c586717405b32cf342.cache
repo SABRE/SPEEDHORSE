@@ -1,0 +1,54 @@
+a:10:{s:7:"content";s:2515:"
+<div class="border-box">
+<div class="border-tl"><div class="border-tr"><div class="border-tc"></div></div></div>
+<div class="border-ml"><div class="border-mr"><div class="border-mc float-break">
+
+<div class="content-view-full">
+    <div class="class-flash">
+
+    <div class="attribute-header">
+        <h1>Horse Video 1</h1>
+    <div>
+
+    <div class="attribute-short">
+        
+<p>Video Description&nbsp;Video Description&nbsp;Video Description&nbsp;Video Description.</p>    </div>
+
+    <div class="content-media">
+    
+    
+    
+    
+    <script type="text/javascript">
+    <!--
+        insertMedia( '<object type="application/x-shockwave-flash"  data="/extension/speedhorse/design/speedhorse/flash/flash_player.swf"  width="448" height="354"> ');
+        insertMedia( '<param name="movie" value="/extension/speedhorse/design/speedhorse/flash/flash_player.swf"  /> ');
+        insertMedia( '<param name="scale" value="exactfit" /> ');
+        insertMedia( '<param name="allowScriptAccess" value="sameDomain" />');
+        insertMedia( '<param name="allowFullScreen" value="true" />');
+        insertMedia( '<param name="flashvars" value="moviepath=/layout/set/print/content/download/591/5666&amp;embedurl=http://collegeyardart.com/index.php/flash/embed/591&amp;embedlink=http://collegeyardart.com/index.php/layout/set/print/video_of_week/Horse-Video-1" />');
+        insertMedia( '<p>No <a href="http://www.macromedia.com/go/getflashplayer">Flash player<\/a> avaliable!<\/p>');
+        insertMedia( '<\/object>' );
+    //-->
+    </script>
+
+    <noscript>
+    <object type="application/x-shockwave-flash" data="/extension/speedhorse/design/speedhorse/flash/flash_player.swf" width="448" height="354">
+        <param name="movie" value="/extension/speedhorse/design/speedhorse/flash/flash_player.swf" />
+        <param name="scale" value="exactfit" />
+        <param name="allowScriptAccess" value="sameDomain" />
+        <param name="allowFullScreen" value="true" />
+        <param name="flashvars" value="moviepath=/layout/set/print/content/download/591/5666&amp;embedurl=http://collegeyardart.com/index.php/flash/embed/591&amp;embedlink=http://collegeyardart.com/index.php/layout/set/print/video_of_week/Horse-Video-1" />
+        <p>No <a href="http://www.macromedia.com/go/getflashplayer">Flash player</a> avaliable!</p>
+    </object>
+    </noscript>
+    </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+</div></div></div>
+<div class="border-bl"><div class="border-br"><div class="border-bc"></div></div></div>
+</div>";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:3:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:13:"video_of_week";s:3:"url";s:22:"/content/view/full/537";s:9:"url_alias";s:13:"video_of_week";s:7:"node_id";s:3:"537";}i:2;a:4:{s:4:"text";s:13:"Horse Video 1";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"538";}}s:10:"title_path";a:3:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:13:"video_of_week";s:3:"url";s:22:"/content/view/full/537";s:9:"url_alias";s:13:"video_of_week";s:7:"node_id";s:3:"537";}i:2;a:3:{s:4:"text";s:13:"Horse Video 1";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"538";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"591";s:7:"node_id";s:3:"538";s:14:"parent_node_id";s:3:"537";s:8:"class_id";s:2:"31";s:16:"class_identifier";s:12:"flash_player";s:9:"remote_id";s:32:"2872a6255980eb13b9e7ad4c032c470a";s:14:"node_remote_id";s:32:"fade8fe8b441dd40afc1c2c0f3ee5aa0";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"3";s:9:"url_alias";s:27:"video_of_week/Horse-Video-1";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"2";s:12:"main_node_id";s:3:"538";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:1:"1";s:23:"parent_class_identifier";s:6:"folder";}s:13:"template_list";a:3:{i:0;s:79:"extension/speedhorse/design/speedhorse/override/templates/full/flash_player.tpl";i:1;s:61:"design/standard/templates/content/datatype/view/ezxmltext.tpl";i:2;s:94:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/paragraph.tpl";}s:9:"cache_ttl";i:-1;}

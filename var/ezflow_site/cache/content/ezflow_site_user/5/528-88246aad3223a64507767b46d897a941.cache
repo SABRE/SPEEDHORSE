@@ -1,0 +1,186 @@
+a:10:{s:7:"content";s:12148:"<div style="width:940px">
+	<div style="float:left; width:200px;">
+<div id="left_sidebar">
+        	<div id="left_sidebar_content">
+            	<div class="info">
+                	<h3>Price</h3>
+                    <form action="#" method="post" id="price_search">
+                        <input type="text" name="search" value="$">
+                        <span>TO</span>
+                        <input type="text" name="search" value="$">
+                        <input type="submit" style="display:none;">
+                    </form>
+                </div><!--end div.info-->
+                
+                                 	       				                    			                                     <div class="info active">
+                          				<h3>
+Breeding For Sale</h3>
+                                       	                 								
+                                                
+                                                       				 							                                                	<ul>
+                                                                                                            <br /><li></li><a href="/CLASSIFIEDS/Breeding-For-Sale/SubCategory1">
+SubCategory1</a>
+                                                                                                            <br /><li></li><a href="/CLASSIFIEDS/Breeding-For-Sale/SubCategory2">
+SubCategory2</a>
+                                                                                                         </ul>
+       											 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Equine Consultants</h3>
+                                       	                 								
+                                                
+                                                       				 							                                                	<ul>
+                                                                                                            <br /><li></li><a href="/CLASSIFIEDS/Equine-Consultants/SubCategory3">
+SubCategory3</a>
+                                                                                                            <br /><li></li><a href="/CLASSIFIEDS/Equine-Consultants/SubCategory4">
+SubCategory4</a>
+                                                                                                         </ul>
+       											 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Facilities</h3>
+                                       	                 								
+                                                
+                                                       				 							                                                	<ul>
+                                                                                                            <br /><li></li><a href="/CLASSIFIEDS/Facilities/Subcategory5">
+Subcategory5</a>
+                                                                                                         </ul>
+       											 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Horses For Sales</h3>
+                                       	                 								
+                                                
+                                                       				 							 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Products &amp; Services</h3>
+                                       	                 								
+                                                
+                                                       				 							 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Stallions At Stud</h3>
+                                       	                 								
+                                                
+                                                       				 							 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Trainers</h3>
+                                       	                 								
+                                                
+                                                       				 							 
+                  </div><!--end div.info-->                                 
+                   			                                 <div class="info active">
+                          				<h3>
+Insurance</h3>
+                                       	                 								
+                                                
+                                                       				 							 
+                  </div><!--end div.info-->                                 
+                   			       				 
+                
+            </div><!--end div#left_sidebar_content-->
+        </div><!--end div#left_sidebar-->
+        
+       </div>
+    <div style="float:right">
+        
+        <div id="right_content">
+        	<h2>
+Listing Title Here 2</h2>
+            <div class="info_bar">
+            	<div class="left-area">
+                	<a href="#" class="print">Print</a>
+                    <a href="/content/tipafriend/528" title="Email" class="email">Email</a>
+                </div><!--end div.left-area-->
+                <div class="social">
+                	<img src="/images/fb_like.jpg" />
+                    <img src="/images/fb_people_like.jpg" />
+                    <img src="/images/twitter.jpg" />
+                </div><!--end div.social-->
+            </div><!--end div.info_bar-->
+            <div id="content_wrap">
+            	<div id="sidebar_content">
+                
+                <div id="product_images_wrap">
+            		<div id="product_images">
+                    	<div id="main_img">
+						  <a href="#" id="image-1-a-img">
+
+    
+        
+    
+                                                                                                                                            <img src="/var/ezflow_site/storage/images/classifieds/breeding-for-sale/subcategory2/listing-title-here-2/4914-1-eng-US/Listing-Title-Here-2_large.jpg" width="94" height="69"  style="border: 0px  ;" alt="Listing Title Here 2" title="Listing Title Here 2" />
+            
+    
+    
+    </a>
+                           <a href="#" style="display:none;" id="image-2-a-img">
+</a>
+                            <a href="#" style="display:none;" id="image-3-a-img">
+</a>
+                            <a href="#" style="display:none;" id="image-4-a-img">
+</a>
+ 
+                        </div><!--end id#main_img-->
+                        <div id="images">
+            				<a href="#" id="image-1-a">
+
+    
+        
+    
+                                                                                                                                            <img src="/var/ezflow_site/storage/images/classifieds/breeding-for-sale/subcategory2/listing-title-here-2/4914-1-eng-US/Listing-Title-Here-2_large.jpg" width="94" height="69"  style="border: 0px  ;" alt="Listing Title Here 2" title="Listing Title Here 2" />
+            
+    
+    
+    </a>
+                            <a href="#" id="image-2-a">
+</a>
+                            <a href="#" id="image-3-a">
+</a>
+             				<a href="#" id="image-4-a">
+</a>
+							
+                        </div><!--end id#images-->
+                	</div><!--end div#product_images-->
+                </div><!--end div#product_images_wrap-->
+                
+                
+                
+                
+                	
+                    <div class="contact_info">
+                    	<h3>Contact Information</h3>
+                        <span>
+Listing Advertiser Name</span>
+                        <span><a href="mailto:email@domain.com">
+</a></span>
+                        <span>
+</span>
+                    </div><!--end div.contact_info-->
+                    <div class="contact_info">
+                    	<h3>Listing Tools</h3>
+                        <span><a href="/content/tipafriend/528" title="Email a Friend">Email a Friend</a></span>
+                        <span><a href="#">Print this Listing</a></span>
+                        
+                    </div><!--end div.contact_info-->
+                </div><!--end div#sidebar_content-->
+                <div id="main_content">
+                	<h3>
+City,
+State &nbsp;&nbsp; <span>Price $220.00<br /></span></h3>
+                	<p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus egestas nibh a pharetra. Donec luctus ligula ut nulla vehicula a convallis ligula mollis. Praesent justo nibh, fringilla a pharetra id, elementum non lacus. Morbi et nisl orci. Duis nec nibh magna. Quisque vel tellus dui, vel semper nulla. Praesent in diam risus, vel pulvinar dolor. Donec iaculis mauris sit amet odio pharetra non ultricies massa mollis. Proin vulputate neque quis erat condimentum sed ultrices lorem tincidunt. Proin rhoncus convallis mi, at vulputate nunc sodales ac. Proin nunc dolor, porta vitae ornare eget, feugiat id arcu. Sed adipiscing urna sit amet magna congue eleifend id ac sapien. Donec et lectus odio. Proin justo est, faucibus vitae dictum sit amet, blandit vel dolor. Fusce nisl magna, placerat non pellentesque at, condimentum eget lectus. Aenean nec elit odio. Fusce sed pharetra eros. Donec laoreet nibh nec neque convallis fermentum. Nullam in hendrerit odio. Fusce vehicula mollis nulla.</p><p>Vestibulum eu orci at sem ullamcorper elementum. Ut venenatis lorem eu enim sodales laoreet. Integer vel purus vel arcu varius tempor. Curabitur commodo ullamcorper consequat. Morbi erat sem, euismod suscipit gravida non, vehicula nec urna. Ut ipsum libero, feugiat a molestie vitae, tincidunt vel ipsum. Praesent sagittis enim magna, nec elementum massa. Nunc sed urna vel arcu consectetur egestas a accumsan elit. Donec in lorem odio, non tempus lectus. Suspendisse dictum interdum orci sed hendrerit. Cras magna odio, tempor in rhoncus eget, vestibulum a nisi. Integer aliquam justo et eros molestie vitae pharetra orci commodo. Ut egestas eleifend tortor quis suscipit. Fusce nisi risus, commodo at adipiscing hendrerit, scelerisque id tellus.</p><p>Mauris ut tellus dolor, sit amet lacinia risus. Sed aliquam ligula quis est ultricies pretium. Vestibulum adipiscing volutpat justo sed tempus. Sed eu augue ipsum, at faucibus nisi. Quisque vestibulum, lectus in tristique tincidunt, lectus nisi venenatis nunc, at bibendum mauris sem nec lacus. Pellentesque faucibus quam non sem feugiat scelerisque. Aenean nec sollicitudin nisl. Aenean at tellus augue, sit amet gravida arcu. Nunc nec augue a enim tempor molestie. Sed ligula lorem, commodo vel elementum quis, ultrices at dui.</p><p>Vestibulum sed metus id massa aliquam sollicitudin. Etiam faucibus consequat tellus, ac mollis ipsum suscipit vel. Aliquam tempus nisi lectus, vel eleifend est. Proin dictum consequat varius. In hac habitasse platea dictumst. Vestibulum at magna eu odio posuere elementum. Ut facilisis erat sed leo eleifend vel auctor risus malesuada. Quisque aliquam turpis quis augue mollis at lacinia diam viverra. Etiam non tortor magna. Fusce scelerisque eros id rutrum facilisis, erat mi porta mi, vitae eleifend odio tortor non elit. Sed sed ipsum mattis quam semper pulvinar. Ut dapibus ultrices turpis tincidunt blandit.</p></p>
+                </div><!--end div#main_content-->
+            </div><!--end div#content_wrap-->
+        </div><!--end div#right_content-->
+        
+   </div>
+</div>        ";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:5:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:11:"CLASSIFIEDS";s:3:"url";s:22:"/content/view/full/580";s:9:"url_alias";s:11:"CLASSIFIEDS";s:7:"node_id";s:3:"580";}i:2;a:4:{s:4:"text";s:17:"Breeding For Sale";s:3:"url";s:22:"/content/view/full/581";s:9:"url_alias";s:29:"CLASSIFIEDS/Breeding-For-Sale";s:7:"node_id";s:3:"581";}i:3;a:4:{s:4:"text";s:12:"SubCategory2";s:3:"url";s:22:"/content/view/full/590";s:9:"url_alias";s:42:"CLASSIFIEDS/Breeding-For-Sale/SubCategory2";s:7:"node_id";s:3:"590";}i:4;a:4:{s:4:"text";s:20:"Listing Title Here 2";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"528";}}s:10:"title_path";a:5:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:11:"CLASSIFIEDS";s:3:"url";s:22:"/content/view/full/580";s:9:"url_alias";s:11:"CLASSIFIEDS";s:7:"node_id";s:3:"580";}i:2;a:4:{s:4:"text";s:17:"Breeding For Sale";s:3:"url";s:22:"/content/view/full/581";s:9:"url_alias";s:29:"CLASSIFIEDS/Breeding-For-Sale";s:7:"node_id";s:3:"581";}i:3;a:4:{s:4:"text";s:12:"SubCategory2";s:3:"url";s:22:"/content/view/full/590";s:9:"url_alias";s:42:"CLASSIFIEDS/Breeding-For-Sale/SubCategory2";s:7:"node_id";s:3:"590";}i:4;a:3:{s:4:"text";s:20:"Listing Title Here 2";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"528";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"575";s:7:"node_id";s:3:"528";s:14:"parent_node_id";s:3:"590";s:8:"class_id";s:2:"50";s:16:"class_identifier";s:10:"classified";s:9:"remote_id";s:32:"c40b99681361db0e477a72a1e1fb6197";s:14:"node_remote_id";s:32:"b5605c177d1fa088a833e9752abf690b";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"5";s:9:"url_alias";s:63:"CLASSIFIEDS/Breeding-For-Sale/SubCategory2/Listing-Title-Here-2";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"3";s:12:"main_node_id";s:3:"528";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:2:"58";s:23:"parent_class_identifier";s:17:"classified_folder";}s:13:"template_list";a:6:{i:0;s:94:"extension/speedhorse/design/speedhorse/override/templates/full/classifiedlisting_frontpage.tpl";i:1;s:60:"design/standard/templates/content/datatype/view/ezstring.tpl";i:15;s:59:"design/standard/templates/content/datatype/view/ezimage.tpl";i:28;s:82:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezprice.tpl";i:29;s:61:"design/standard/templates/content/datatype/view/ezxmltext.tpl";i:30;s:94:"extension/speedhorse/design/speedhorse/templates/content/datatype/view/ezxmltags/paragraph.tpl";}s:9:"cache_ttl";i:-1;}

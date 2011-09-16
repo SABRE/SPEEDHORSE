@@ -1,0 +1,79 @@
+a:10:{s:7:"content";s:3605:"<div style="width:940px;">
+<div style="float:left; width:600px;">
+<div id="content"><!--start div#content-->
+	                                                                
+                                                                                
+                                                                	
+                                	                                                                                                        	
+                                	                                                                 
+                                 
+                                
+    <div class="category_posts">
+         <div class="blogpost" >
+            
+
+    
+        
+    
+                                                                                                                                    <a href="/index.php/Blog-Frontpage/Blogpost2">        <img src="/var/ezflow_site/storage/images/media2/testimg2/2301-1-eng-US/testimg2_blog_img.jpg" width="87" height="100"  style="border: 0px  ;" alt="testimg2" title="testimg2" />
+        </a>    
+    
+    
+                <div class="blogpost_right">
+         	   <h4><a href="/index.php/Blog-Frontpage/Blogpost2" title="Blogpost2">Blogpost2</a></h4>
+               <p>
+Blog Post Summary</p>
+                   <div style="position:relative;bottom:0;">
+                                    <h6 class="post_date">Posted on: Wednesday, August 10, 2011</h6>
+                                    <h6>Administrator User</h6>
+                    </div>
+               <em class="blogem"><a href="/index.php/Blog-Frontpage/Blogpost2">Read More &raquo;</a></em>
+            </div><!--end div.post_right-->
+         </div><!--end div.post-->
+   </div><!--end div.category_posts-->
+
+
+
+                                            
+                                                                                
+                                                                	
+                                	                                                                                                        	
+                                	                                                                 
+                                 
+                                
+    <div class="category_posts">
+         <div class="blogpost" >
+            
+
+    
+        
+    
+                                                                                                                                    <a href="/index.php/Blog-Frontpage/Blogpost1">        <img src="/var/ezflow_site/storage/images/media2/testimg4/2309-1-eng-US/testimg4_blog_img.jpg" width="87" height="100"  style="border: 0px  ;" alt="testimg4" title="testimg4" />
+        </a>    
+    
+    
+                <div class="blogpost_right">
+         	   <h4><a href="/index.php/Blog-Frontpage/Blogpost1" title="Blogpost1">Blogpost1</a></h4>
+               <p>
+Blog Summary Blog Summary</p>
+                   <div style="position:relative;bottom:0;">
+                                    <h6 class="post_date">Posted on: Wednesday, August 10, 2011</h6>
+                                    <h6>Administrator User</h6>
+                    </div>
+               <em class="blogem"><a href="/index.php/Blog-Frontpage/Blogpost1">Read More &raquo;</a></em>
+            </div><!--end div.post_right-->
+         </div><!--end div.post-->
+   </div><!--end div.category_posts-->
+
+
+
+                        
+            
+
+ 
+
+            	
+		</div><!--end div#content-->
+</div>
+<div style="float:left; width:340px;">  </div> 
+</div>           ";s:15:"view_parameters";a:5:{s:6:"offset";b:0;s:4:"year";b:0;s:5:"month";b:0;s:3:"day";b:0;s:10:"namefilter";b:0;}s:4:"path";a:2:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:4:{s:4:"text";s:14:"Blog Frontpage";s:3:"url";b:0;s:9:"url_alias";b:0;s:7:"node_id";s:3:"261";}}s:10:"title_path";a:2:{i:0;a:4:{s:4:"text";s:4:"Home";s:3:"url";s:20:"/content/view/full/2";s:9:"url_alias";s:0:"";s:7:"node_id";s:1:"2";}i:1;a:3:{s:4:"text";s:14:"Blog Frontpage";s:3:"url";b:0;s:9:"url_alias";b:0;}}s:10:"section_id";s:1:"1";s:7:"node_id";s:3:"261";s:15:"navigation_part";s:23:"ezcontentnavigationpart";s:12:"content_info";a:22:{s:9:"object_id";s:3:"290";s:7:"node_id";s:3:"261";s:14:"parent_node_id";s:1:"2";s:8:"class_id";s:2:"19";s:16:"class_identifier";s:4:"blog";s:9:"remote_id";s:32:"ace1e44f28a0c140c16a76ebc75df467";s:14:"node_remote_id";s:32:"e687d368666ff5a63e30c57e2c37548c";s:6:"offset";b:0;s:8:"viewmode";s:4:"full";s:26:"navigation_part_identifier";s:23:"ezcontentnavigationpart";s:10:"node_depth";s:1:"2";s:9:"url_alias";s:14:"Blog-Frontpage";s:16:"current_language";s:6:"eng-US";s:13:"language_mask";s:1:"2";s:12:"main_node_id";s:3:"261";s:19:"main_node_url_alias";b:0;s:19:"persistent_variable";b:0;s:11:"class_group";b:0;s:5:"state";a:1:{i:2;s:1:"1";}s:16:"state_identifier";a:1:{i:0;s:18:"ez_lock/not_locked";}s:15:"parent_class_id";s:2:"23";s:23:"parent_class_identifier";s:9:"frontpage";}s:13:"template_list";a:6:{i:0;s:81:"extension/speedhorse/design/speedhorse/override/templates/full/blog_frontpage.tpl";i:1;s:76:"extension/speedhorse/design/speedhorse/override/templates/line/blog_post.tpl";i:2;s:59:"design/standard/templates/content/datatype/view/ezimage.tpl";i:3;s:60:"design/standard/templates/content/datatype/view/ezstring.tpl";i:7;s:46:"design/standard/templates/navigator/google.tpl";i:8;s:75:"extension/ezflow/design/standard/templates/content/datatype/view/ezpage.tpl";}s:9:"cache_ttl";i:-1;}
