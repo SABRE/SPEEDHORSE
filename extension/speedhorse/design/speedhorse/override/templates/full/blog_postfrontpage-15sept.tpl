@@ -1,5 +1,5 @@
 <div style="width:940px">
-	<div style="float:left; width:625px;">
+	<div style="float:left;">
     	<div id="content" style="z-index:9999;"><!--start div#content-->
 			<div id="blog_directory">
             	<h4>Blog Directory:</h4>
@@ -112,25 +112,7 @@
 			</div><!--end div#bottom_content_wrap -->
         </div><!--end div#content-->   
 
-          
-		
-    </div>
-   <div style="float:left; width:315px;">
-    
-   
-    
-    {def $my_node=fetch( 'content', 'node', hash( 'node_id', $node.parent_node_id ) )}
-   
-
-    
-   
-{attribute_view_gui attribute=$my_node.object.data_map.layout}
-  
-
-    	
-    </div>
-    
-    <div id="comments">
+            <div id="comments">
             {def $facebookurl=""}
 			{set $facebookurl=concat('http://collegeyardart.com',$node.url_alias|ezurl(no))}
             <h2>Comments (<fb:comments-count href="{$facebookurl}"/></fb:comments-count>) </h2>
@@ -147,4 +129,51 @@
                  
                 
             </div><!--end div#comments-->
+		
+    </div>
+    <div style="float:right">
+    	<div id="sidebar"><!--start div#sidebar-->
+			{def $children = array()
+                 $children_count = ''}
+                 {set $children_count=fetch_alias( 'children_count', hash( 'parent_node_id', '266') )}
+       				 {if $children_count}
+                   			    {foreach fetch_alias( 'children', hash( 'parent_node_id', '266')  ) as $child max 1}
+                           				{attribute_view_gui attribute=$child.data_map.ad_image href=$child.url_alias|ezurl()}
+                    			{/foreach}
+       				{/if}        
+		<div style="height:35px;"></div>
+            
+            <h2 class="section_title" style="float:left;">Tags</h2>
+            
+            <div id="blog_tags" style="float:left;">
+            {foreach $node.data_map.tags.content.keywords as $keyword}
+                                             <a href={concat( $node.parent.url_alias, "/(id)/", $node.parent.node_id, "/(tag)/", $keyword|rawurlencode )|ezurl} title="{$keyword}">{$keyword}</a>
+                                             {delimiter}
+                                               ,
+                                             {/delimiter}
+                                         {/foreach}
+            	
+            </div><!--end div#blog_tags-->
+            
+            <h2 class="section_title" style="float:left;">Blog Archives</h2>
+            	{include uri='design:parts/blog/extra_info.tpl' used_node=$node.parent}
+            
+        			
+            
+			<a id="sidebar_site_link_1" href="#" style="float:left;"></a>
+			<a id="sidebar_site_link_2" href="#" style="float:left;"></a>
+
+			<h2 class="section_title" style="float:left;">special focus title</h2>
+			<ul class="speedhorse_list" style="float:left; width:100%;">
+			{def $children = array()
+                 $children_count = ''}
+                 {set $children_count=fetch_alias( 'children_count', hash( 'parent_node_id', '288') )}
+       				 {if $children_count}
+                   			    {foreach fetch_alias( 'children', hash( 'parent_node_id', '288')  ) as $child max 7}
+                           				<li><a href={$child.url_alias|ezurl()}>{attribute_view_gui attribute=$child.data_map.title}</a></li>
+                    			{/foreach}
+       				{/if} 
+            </ul>
+ 			</div><!--end div#sidebar -->
+    </div>
 </div>    

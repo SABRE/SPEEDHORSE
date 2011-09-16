@@ -208,6 +208,7 @@ $(".subnav").click(function(){
 	
 		//alert('hello');
 		$("#aremagazine_wrap").css({"height":"auto"});
+		$("#aremagazine_wrap .mainmagazine").hide();
 		
 		
 	});
@@ -216,7 +217,36 @@ $(".subnav").click(function(){
 		
 	
 		//alert('hello');
-		$("#aremagazine_wrap").css({"height":"auto"});
+	//	$("#curremagazine_wrap").css({"height":"auto"});
+		var theId = $(".newmagazine").attr('id');
+	if(theId!== undefined){
+	// alert(theId);
+	 $(".newmagazine").hide();
+	 $("#"+theId).show();
+	 var theImageId = $(".emagazineactiveimg").attr('id');
+	 $(".items").hide();
+	 $("#"+theImageId).show();
+	 
+	 $("#curremagazine_wrap ul.subemagazine").hide();
+	 $("#curremagazine_wrap ul.subemagazineactive").show();
+	 
+	 $("#curremagazine_wrap li.subemagazineli").show();
+	 
+	// $("#aremagazine_wrap ul.arsubemagazine").hide();
+	
+
+	var id = $("ul#"+theImageId+" li:first").attr("id");
+		
+		var theIdul = $(".newmagazine").attr('id');
+		//alert(theIdul);
+		if(theIdul!== undefined){
+		theIdul = theIdul.replace("big","subul");
+		id = $("ul#"+theIdul+" li:first").attr("id");
+		id=id.replace("aa","li");
+		//alert(id);
+		$("#"+id).addClass("eMagazineleftbarbold");
+		}
+	}
 		
 		
 	});
@@ -518,7 +548,8 @@ $(".basic").click(function(){
 	});
 	
 	$(".leftbaractive").click(function(){
-		
+	
+	//alert('hello')
 		var theId = $(this).attr('id');
 		 //alert(theId.replace("ul", "big"));
 		 theId=theId.replace("ul", "big");
@@ -562,7 +593,10 @@ $(".basic").click(function(){
 	$(".leftbarinactive").click(function(){
 		//alert('hellllllo');
 		//value.replace(".", ":");
+		 
 		 $("#curremagazine_wrap a").removeClass("leftbaractive");
+		 $("#aremagazine_wrap a").removeClass("leftbaractive");
+		
 		//$("#magazine_items div.items").hide();
 		//$(".items").hide();
 		var theId = $(this).attr('id');
@@ -590,11 +624,17 @@ $(".basic").click(function(){
 	
 		//alert(id);
 		$("#curremagazine_wrap ul.subemagazine").hide();
+		$("#aremagazine_wrap ul.subemagazine").hide();
 		theSubul=theSubul.replace("ul","subul");
 	//alert(theSubul);
+	$("#curremagazine_wrap").css({"height":"auto"});
 	  $("#"+theSubul).show();
+	  
 	 
 	 $(this).addClass("leftbaractive");
+	 //alert($(this).attr('id'));
+	 
+	 //$("#aremagazine_wrap .myleftclassmain").addClass("leftbaractive");
 	 	
 		 return false;
 	});
@@ -604,12 +644,14 @@ $(".subemagazineli").click(function(){
 		var theIdli = $(this).attr('id');
 		//alert(theId);
 		$("#curremagazine_wrap li").removeClass("eMagazineleftbarbold");
+		$("#aremagazine_wrap li").removeClass("eMagazineleftbarbold");
 	 	$(".items").hide();
 		theId=theId.replace("li","aa")+"_div";
 		theIdli=theIdli.replace("li","aa");
 		
 		$(".mini_nav a").removeClass("emagazineactive");
 		$("#"+theIdli).addClass("emagazineactive");
+		
 		$("#"+theId).show();
 		$(this).addClass("eMagazineleftbarbold");
 		 return false;
@@ -629,7 +671,7 @@ $(".subemagazineli").click(function(){
 	
 	$('.more_link_wrap1 a').click(function (e) {
 										  
-		alert($(this).attr('id'));								  
+		//alert($(this).attr('id'));								  
 		var theIdli = $(this).attr('id');
 		//alert(theIdli);
 		theIdli=theIdli.replace("aa_","");
@@ -641,7 +683,7 @@ $(".subemagazineli").click(function(){
 	
 	$('.more_link_wrap_main a').click(function (e) {
 										  
-		alert($(this).attr('id'));								  
+		//alert($(this).attr('id'));								  
 		var theIdli = $(this).attr('id');
 		//alert(theIdli);
 		theIdli=theIdli.replace("aaa_","");
@@ -677,19 +719,28 @@ $(".subemagazineli").click(function(){
 	
 	/* emagazine archeieve section */
 	
-	$("#aremagazine_wrap .myleftclass").click(function(){
+	$("#aremagazine_wrap .myleftclassmain").click(function(){
 	
 		
 	//alert('hello');
-	$("#aremagazine_wrap .subemagazine").hide();
-	
-	var id=$(this).attr('id');
-	id=id.replace("ul","subul");
-	alert(id);
-	$("#"+id).show();
-		$(this).show();
 		
-		$("#aremagazine_wrap").css({"height":"auto"});
+		
+		//var id=$(this).attr('id');
+		//id=id.replace("ul","subul");
+		///alert(id);
+		//$("#"+id).show();
+		//alert($(this).attr('id'));
+			//$(this).show();
+			
+			
+			var id=$(this).attr('id');
+			//alert(id);
+			$("#aremagazine_wrap .mainmagazine").hide();
+			id=id.replace("mainul","monthul");
+			$("#"+id).show();
+			$("#aremagazine_wrap").css({"height":"auto"});
+			$("#aremagazine_wrap .myleftclassmain").removeClass("leftbaractivemain");
+			 $(this).addClass("leftbaractivemain");
 	
 	});
 	
