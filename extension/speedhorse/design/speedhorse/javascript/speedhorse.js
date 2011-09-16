@@ -22,9 +22,10 @@ jQuery(document).ready(function($) {
 		//alert($("#"+mymenu+" a").attr('id'));
 		var mysubid=$("#"+mymenu+" a").attr('id');
 		//id1=id1.replace("thumb","big");
-		mysubid=mysubid.replace("a_node_id","subnav");
+		
 		if(mysubid!== undefined){
 			
+			mysubid=mysubid.replace("a_node_id","subnav");
 			$("#"+mysubid).show();
 		}
 		$("#"+mymenu).addClass("current_page");
