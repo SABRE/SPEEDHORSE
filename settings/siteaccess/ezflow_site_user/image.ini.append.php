@@ -42,6 +42,7 @@ AliasList[]=blog_inner_img
 AliasList[]=classify_listing_img
 AliasList[]=blogsponsor_img
 AliasList[]=articalsponsor_img
+AliasList[]=blogfulcat_img
 
 [small]
 Reference=
@@ -237,4 +238,10 @@ Filters[]=geometry/scale=155!;28!
 Reference=
 Filters[]
 Filters[]=geometry/scale=105!;20!
+
+[blogfulcat_img]
+Reference=
+Filters[]
+Filters[]=geometry/scale=940!;100!
+
 */ ?>
