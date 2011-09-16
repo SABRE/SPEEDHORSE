@@ -26,14 +26,14 @@
  <div> 
   <div id="colophon_wrap">
 			<div id="colophon">
-				<form id="bottom_subscribe" method="post" action="subscribe.php">
+				<!-- <form id="bottom_subscribe" method="post" action="subscribe.php">
 					<h2>subscribe</h2>
 					<h4>to our newsletter</h4>
 					<input type="text" name="email_subscribe">
 					<a id="submit_subscribe" onClick="$('#bottom_subscribe').submit()">submit<span style="color:white; font-size:8px; vertical-align:1px;">&#x25BA;</span></a>
-				</form>
+				</form> -->
 				<div class="colophon_cols">
-					<ul>
+					<!-- <ul>
 						<li><h6>racing news</h6></li>
 						<li><a href="#">Top Stories</a></li>
 						<li><a href="#">Features</a></li>
@@ -42,10 +42,10 @@
 						<li><a href="#">Social</a></li>
 						<li><a href="#">Racing Results</a></li>
 						<li><a href="#">Leaderboards</a></li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="colophon_cols">
-					<ul>
+					<!-- <ul>
 						<li><h6>blogs</h6></li>
 						<li><a href="#">Blog Title #1</a></li>
 						<li><a href="#">Blog Title #2</a></li>
@@ -54,10 +54,10 @@
 						<li><a href="#">Blog Title #5</a></li>
 						<li><a href="#">Blog Title #6</a></li>
 						<li><a href="#">Blog Title #7</a></li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="colophon_cols">
-					<ul>
+					<!-- <ul>
 						<li><h6>media</h6></li>
 						<li><a href="#">Photos</a></li>
 						<li style="margin-bottom:17px;"><a href="#">Video</a></li>
@@ -65,24 +65,24 @@
 						<li><a href="#">Race Schedule</a></li>
 						<li><a href="#">Sale Barn Schedule</a></li>
 						<li><a href="#">Track Events</a></li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="colophon_cols">
-					<ul>
+					<!-- <ul>
 						<li><h6>about</h6></li>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Advertising</a></li>
 						<li><a href="#">FAQ</a></li>
 						<li><a href="#">Contact Us</a></li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="colophon_cols">
-					<ul>
+					<!-- <ul>
 						<li><h6>stuff</h6></li>
 						<li><a href="/index.php/Classifieddetails">Classifieds</a></li>
 						<li><a href="/index.php/Shopdetails">Shop</a></li>
 						<li><a href="#">The Magazine</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 		</div>
