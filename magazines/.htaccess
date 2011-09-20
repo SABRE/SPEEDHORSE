@@ -1,0 +1,4 @@
+RewriteEngine On
+rewriteCond %{REQUEST_URI} !^/(magazines)/
+Order Deny,Allow
+Allow from All

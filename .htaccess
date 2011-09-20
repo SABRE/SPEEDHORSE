@@ -6,10 +6,10 @@ DirectoryIndex index.php
 RewriteEngine On
 
 # Google and testing
-Rewriterule ^/googlehostedservice\.html$ - [L]
-Rewriterule ^/testing/.* - [L]
-Rewriterule ^/magazines/.* - [L]
-Rewriterule ^/images/.* - [L]
+#Rewriterule ^/googlehostedservice\.html$ - [L]
+#Rewriterule ^/testing/.* - [L]
+#Rewriterule ^/magazines/.* - [L]
+#Rewriterule ^/images/.* - [L]
 
 
 RewriteRule ^api/ index_rest.php [L]
