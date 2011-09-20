@@ -4,6 +4,14 @@
 DirectoryIndex index.php
 
 RewriteEngine On
+
+# Google and testing
+Rewriterule ^/googlehostedservice\.html$ - [L]
+Rewriterule ^/testing/.* - [L]
+Rewriterule ^/magazines/.* - [L]
+Rewriterule ^/images/.* - [L]
+
+
 RewriteRule ^api/ index_rest.php [L]
 RewriteRule ^index_rest\.php - [L]
 RewriteRule ^([^/]+/)?content/treemenu.* index_treemenu\.php [L]
@@ -15,8 +23,7 @@ RewriteRule ^extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascri
 RewriteRule ^packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
 RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
-Rewriterule ^/magazines/.* - [L]
-Rewriterule ^/images/.* - [L]
+
 
 
 #  Makes it possible to placed your favicon at the root of your
