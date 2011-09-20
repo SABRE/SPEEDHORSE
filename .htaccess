@@ -1,53 +1,53 @@
-# Copy this file to a new file called .htaccess in your eZ Publish root
-# to secure your installation by turning on .htaccess based virtual host mode.
-
-DirectoryIndex index.php
-
-RewriteEngine On
-
-rewriteCond %{REQUEST_URI} !^/(magazines)/
-Order Deny,Allow
-Allow from All
-
-# Google and testing
-#Rewriterule ^/googlehostedservice\.html$ - [L]
-#Rewriterule ^/testing/.* - [L]
-#Rewriterule ^/magazines/.* - [L]
-#Rewriterule ^/images/.* - [L]
+        <IfModule mod_php5.c>
+                php_admin_flag safe_mode Off
+                php_admin_value register_globals 0
+                php_value magic_quotes_gpc 0                php_value magic_quotes_runtime 0
+                php_value allow_call_time_pass_reference 0 
+        </IfModule>
 
 
-RewriteRule ^api/ index_rest.php [L]
-RewriteRule ^index_rest\.php - [L]
-RewriteRule ^([^/]+/)?content/treemenu.* index_treemenu\.php [L]
-RewriteRule ^var/([^/]+/)?storage/images(-versioned)?/.* - [L]
-RewriteRule ^var/([^/]+/)?cache/(texttoimage|public)/.* - [L]
-RewriteRule ^design/[^/]+/(stylesheets|images|javascript)/.* - [L]
-RewriteRule ^share/icons/.* - [L]
-RewriteRule ^extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascripts?)/.* - [L]
-RewriteRule ^packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
-RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
-RewriteRule ^var/storage/packages/.* - [L]
+        <IfModule mod_rewrite.c>
+
+                RewriteEngine On
+
+                # Google and testing
+                Rewriterule ^/googlehostedservice\.html$ - [L]
+                Rewriterule ^/testing/.* - [L]
+				Rewriterule ^/magazines/.* - [L]
+				Rewriterule ^/images/.* - [L]
+
+                # Dynamic menu control
+                RewriteRule content/treemenu/?$ /index_treemenu.php [L]
+
+
+                # Standard stuff
+                Rewriterule ^/share/.* - [L]
+                Rewriterule ^/var/storage/.* - [L]
+                Rewriterule ^/var/[^/]+/storage/.* - [L]
+
+                #RewriteRule ^/var/cache/texttoimage/.* - [L]
+                #RewriteRule ^/var/[^/]+/cache/texttoimage/.* - [L]
+
+                RewriteRule ^/var/([^/]+/)?cache/(texttoimage|public)/.* - [L]
 
 
 
-#  Makes it possible to placed your favicon at the root of your
-#  eZ Publish instance. It will then be served directly.
-RewriteRule ^favicon\.ico - [L]
-#  Uncomment the line below if you want you favicon be served from the standard design.
-#  You can customize the path to favicon.ico by replacing design/standard/images/favicon.ico
-#  by the adequate path.
-#RewriteRule ^favicon\.ico /design/standard/images/favicon\.ico [L]
-RewriteRule ^design/standard/images/favicon\.ico - [L]
+                RewriteRule ^/var/[^/]+/cache/(flash|lib|stylesheets|images|flv|javascripts?)/.* - [L]
+                RewriteRule ^/var/[^/]+/cache/public/.* - [L]
 
-# Give direct access to robots.txt for use by crawlers (Google, Bing, Spammers..)
-RewriteRule ^robots\.txt - [L]
+                Rewriterule ^/design/[^/]+/(stylesheets|images|flash|javascript|javascripts|flv)/.* - [L]
+                #Rewriterule ^/extension/[^/]+/design/[^/]+/(stylesheets|images|javascript|javascripts|flv)/.* - [L]
+                Rewriterule ^/extension/[^/]+/design/[^/]+/(stylesheets|images|javascript|flash|flv|lib?)/.* - [L]
 
-# Uncomment the following lines when using popup style debug.
-# RewriteRule ^var/cache/debug\.html.* - [L]
-# RewriteRule ^var/[^/]+/cache/debug\.html.* - [L]
+                Rewriterule ^/extension/admin2pp/share/icons/crystal-admin-opt43/.* - [L]
 
-# Platform for Privacy Preferences Project ( P3P ) related files for Internet Explorer
-# More info here : http://en.wikipedia.org/wiki/P3p
-RewriteRule ^w3c/p3p\.xml - [L]
+                Rewriterule ^/packages/styles/.+/(stylesheets|images|flv|javascripts?)/[^/]+/.* - [L]
+                RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]
+                RewriteRule ^/favicon\.ico - [L]
+                RewriteRule ^/robots\.txt - [L]
 
-RewriteRule .* index\.php
+                RewriteRule .* /index.php
+				
+
+         </IfModule>
+
