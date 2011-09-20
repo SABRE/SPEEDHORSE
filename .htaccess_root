@@ -15,6 +15,9 @@ RewriteRule ^extension/[^/]+/design/[^/]+/(stylesheets|flash|images|lib|javascri
 RewriteRule ^packages/styles/.+/(stylesheets|images|javascript)/[^/]+/.* - [L]
 RewriteRule ^packages/styles/.+/thumbnail/.* - [L]
 RewriteRule ^var/storage/packages/.* - [L]
+Rewriterule ^/magazines/.* - [L]
+Rewriterule ^/images/.* - [L]
+
 
 #  Makes it possible to placed your favicon at the root of your
 #  eZ Publish instance. It will then be served directly.
