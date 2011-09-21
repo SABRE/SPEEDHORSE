@@ -1,7 +1,7 @@
 # Copy this file to a new file called .htaccess in your eZ Publish root
 # to secure your installation by turning on .htaccess based virtual host mode.
 
-DirectoryIndex index.php
+#DirectoryIndex index.php
 
-RewriteEngine On
-RewriteRule .* index\.php
+#RewriteEngine On
+#RewriteRule .* index\.php
