@@ -1,8 +1,2 @@
 DirectoryIndex index.php
-
-RewriteEngine On
-RewriteRule ^/magazines/.* - [L]
-RewriteRule ^/images/.* - [L]
-
-
 RewriteRule .* index\.php
