@@ -45,7 +45,7 @@
 										{else}
 											<div class="items" id="{$achid}{$childnew.node_id}_{$icol}_div" >
 										{/if}
-										<a href="http://sandbox.speedhorse.com/magazines/extension/speedhorse/design/speedhorse/flash/{attribute_view_gui attribute=$childnew.data_map.magazine_link}/index.html" target="_blank">{attribute_view_gui attribute=$childnew.data_map.big_image}</a>
+										<a href="http://sandbox.speedhorse.com/magazines/{attribute_view_gui attribute=$childnew.data_map.magazine_link}" target="_blank">{attribute_view_gui attribute=$childnew.data_map.big_image}</a>
 											</div>
 										{set icol=$icol|inc}
 									{/foreach}	
