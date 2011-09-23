@@ -64,10 +64,11 @@
 							{if and( $pagedesign.data_map.register_user_label.has_content, ezmodule( 'user/register' ) )}
 							<li><a href={"/user/register"|ezurl} title="{$pagedesign.data_map.register_user_label.data_text|wash}">join</a></li>
 							{/if}
+							<li>
+							{include uri='extension/ngconnect/design/standard/templates/ngconnect/ngconnect.tpl'}
+							</li>
 						{/if}
-					<li>
-					{include uri='extension/ngconnect/design/standard/templates/ngconnect/ngconnect.tpl'}
-					</li>
+					
 				</ul><!--end ul-->
 			</div><!--end div#utility_menu-->
 			<a id="print_edition" href="#"></a>
